@@ -349,7 +349,7 @@ export function DeskGate() {
             <label className={label}>Name</label>
             <input required className={field} value={editing.name} onChange={(event) => setEditing({ ...editing, name: event.target.value })} />
             <label className={label}>Image</label>
-            <input className="block w-full text-sm text-[#a39b90] file:mr-3 file:rounded-lg file:border-0 file:bg-[#e07a4a] file:px-3 file:py-2 file:font-semibold file:text-[#1a100c]" name="file" type="file" accept=".jpg,.jpeg,.png,.webp" />
+            <input className="block w-full text-sm text-[#a39b90] file:mr-3 file:rounded-lg file:border-0 file:bg-[#e07a4a] file:px-3 file:py-2 file:font-semibold file:text-[#1a100c]" name="file" type="file" accept=".jpg,.jpeg,.png,.webp,.avif" />
             <label className={label}>Pack sizes</label>
             <div className="grid gap-2">
               {editing.packs.map((pack, index) => (

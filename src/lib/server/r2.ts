@@ -56,8 +56,8 @@ async function putR2(itemId: string, ext: string, body: Buffer): Promise<string>
 
 export async function storeProductImage(itemId: string, file: { name: string; type: string; size: number; bytes: () => Promise<Buffer> }): Promise<string> {
   const ext = (file.name.split(".").pop() || "").toLowerCase();
-  if (!["jpg", "jpeg", "png", "webp"].includes(ext) || file.size > 8 * 1024 * 1024) {
-    throw new Error("Image must be a JPG, PNG, or WebP under 8 MB.");
+  if (!["jpg", "jpeg", "png", "webp", "avif"].includes(ext) || file.size > 8 * 1024 * 1024) {
+    throw new Error("Image must be a JPG, PNG, WebP, or AVIF under 8 MB.");
   }
   const body = await file.bytes();
   const storedExt = ext === "jpeg" ? "jpg" : ext;
