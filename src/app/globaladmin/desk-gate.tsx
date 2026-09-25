@@ -268,10 +268,7 @@ export function DeskGate() {
         {screen === "products" && (
           <>
             <button type="button" className={navBtn} onClick={() => setScreen("home")}>Back</button>
-            <div className="mt-3 flex items-center justify-between gap-4">
-              <h1 className="text-3xl font-semibold">Products</h1>
-              <button type="button" className="rounded-lg bg-[#e07a4a] px-4 py-2 font-semibold text-[#1a100c]" onClick={() => { setCategory(categories[0]?.slug ?? ""); addItem(); }}>Add</button>
-            </div>
+            <h1 className="mt-3 text-3xl font-semibold">Products</h1>
             <input className={`${field} mt-6`} placeholder="Search products" value={productQuery} onChange={(event) => setProductQuery(event.target.value)} />
             {productQueryText ? (
               <ul className="mt-4 grid gap-2">
