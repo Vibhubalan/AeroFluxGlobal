@@ -1,24 +1,66 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import { categories } from "@/lib/content";
+import { useEffect, useMemo, useState } from "react";
+import { categories, products } from "@/lib/content";
 import { productImage } from "@/lib/images";
 import { ArrowUpRight } from "lucide-react";
 
 export function ProductCatalog() {
   const [query, setQuery] = useState("");
+  const [catalog, setCatalog] = useState(categories);
+  const [itemNames, setItemNames] = useState<Record<string, string[]>>(() =>
+    Object.fromEntries(Object.entries(products).map(([slug, items]) => [slug, items.map((item) => item.name)])),
+  );
+  useEffect(() => {
+    fetch("/api/categories")
+      .then((response) => response.json())
+      .then((data) => {
+        if (!Array.isArray(data?.groups)) return;
+        const known = new Set(categories.map((item) => item.slug));
+        const added = data.groups
+          .filter((item: { slug: string }) => !known.has(item.slug))
+          .map((item: { slug: string; title: string }) => ({
+            slug: item.slug,
+            title: item.title,
+            shortTitle: item.title,
+            tagline: "",
+            summary: "",
+            paragraphs: [],
+            brands: [] as string[],
+            groups: [],
+          }));
+        setCatalog([...categories, ...added]);
+      })
+      .catch(() => undefined);
+    fetch("/api/items")
+      .then((response) => response.json())
+      .then((data) => {
+        if (!Array.isArray(data?.items)) return;
+        const names: Record<string, string[]> = {};
+        for (const item of data.items as { category?: string; name?: string }[]) {
+          if (!item.category || !item.name) continue;
+          names[item.category] = [...(names[item.category] ?? []), item.name];
+        }
+        setItemNames((current) => {
+          const next = { ...current };
+          for (const [slug, list] of Object.entries(names)) next[slug] = list;
+          return next;
+        });
+      })
+      .catch(() => undefined);
+  }, []);
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return categories;
-    return categories.filter((item) =>
-      [item.title, item.shortTitle, item.tagline, ...item.brands]
+    if (!q) return catalog;
+    return catalog.filter((item) =>
+      [item.title, item.shortTitle, item.tagline, ...item.brands, ...(itemNames[item.slug] ?? [])]
         .join(" ")
         .toLowerCase()
         .includes(q),
     );
-  }, [query]);
+  }, [query, catalog, itemNames]);
 
   return (
     <>

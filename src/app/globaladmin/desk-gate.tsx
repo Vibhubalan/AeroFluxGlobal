@@ -67,12 +67,21 @@ export function DeskGate() {
   const [editing, setEditing] = useState<Item | null>(null);
   const [draftKey, setDraftKey] = useState("");
   const [productQuery, setProductQuery] = useState("");
+  const [extraGroups, setExtraGroups] = useState<{ slug: string; title: string }[]>([]);
+  const [groupName, setGroupName] = useState("");
   const [pendingDelete, setPendingDelete] = useState<{ category: string; id?: string; label: string } | null>(null);
   const [confirmText, setConfirmText] = useState("");
 
+  const groups = useMemo(() => {
+    const known = new Set(categories.map((entry) => entry.slug));
+    return [
+      ...categories.map((entry) => ({ slug: entry.slug, title: entry.title })),
+      ...extraGroups.filter((entry) => !known.has(entry.slug)),
+    ];
+  }, [extraGroups]);
   const titles = useMemo(
-    () => Object.fromEntries(categories.map((entry) => [entry.slug, entry.title])),
-    [],
+    () => Object.fromEntries(groups.map((entry) => [entry.slug, entry.title])),
+    [groups],
   );
   const visible = items.filter((item) => item.category === category);
   const productQueryText = productQuery.trim().toLowerCase();
@@ -89,6 +98,25 @@ export function DeskGate() {
     if (Array.isArray(data?.items) && data.items.length > 0) {
       setItems(data.items);
     }
+    const groupsResponse = await fetch("/api/categories");
+    const groupsData = await groupsResponse.json().catch(() => null);
+    if (Array.isArray(groupsData?.groups)) setExtraGroups(groupsData.groups);
+  }
+
+  async function addGroup() {
+    const title = groupName.trim();
+    if (!title) return;
+    const response = await fetch("/api/categories", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title }),
+    });
+    const data = await response.json().catch(() => null);
+    if (!response.ok || !data?.slug) return;
+    setExtraGroups((current) => [...current.filter((entry) => entry.slug !== data.slug), { slug: data.slug, title: data.title }]);
+    setGroupName("");
+    setCategory(data.slug);
+    setScreen("items");
   }
 
   useEffect(() => {
@@ -264,7 +292,7 @@ export function DeskGate() {
               </ul>
             ) : null}
             <ul className={`mt-6 grid gap-2 ${productQueryText ? "hidden" : ""}`}>
-              {categories.map((entry) => (
+              {groups.map((entry) => (
                 <li key={entry.slug}>
                   <div className={rowBtn}>
                     <span>{entry.title}</span>
@@ -276,6 +304,10 @@ export function DeskGate() {
                 </li>
               ))}
             </ul>
+            <form className="mt-6 flex gap-2" onSubmit={(event) => { event.preventDefault(); void addGroup(); }}>
+              <input className={field} placeholder="New group name" value={groupName} onChange={(event) => setGroupName(event.target.value)} />
+              <button type="submit" className="shrink-0 rounded-lg bg-[#e07a4a] px-4 py-2 font-semibold text-[#1a100c]">Add group</button>
+            </form>
           </>
         )}
 
@@ -310,7 +342,7 @@ export function DeskGate() {
             {saveError ? <p className="mt-4 text-[#e07a4a]">{saveError}</p> : null}
             <label className={label}>Category</label>
             <select className={field} value={editing.category} onChange={(event) => { setCategory(event.target.value); setEditing({ ...editing, category: event.target.value }); }}>
-              {categories.map((entry) => (
+              {groups.map((entry) => (
                 <option key={entry.slug} value={entry.slug}>{entry.title}</option>
               ))}
             </select>

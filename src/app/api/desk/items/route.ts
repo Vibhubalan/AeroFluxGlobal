@@ -93,6 +93,7 @@ export async function DELETE(request: Request) {
     await dbQuery("DELETE FROM catalog_items WHERE category_slug = $1 AND item_id = $2", [category, id]);
   } else {
     await dbQuery("DELETE FROM catalog_items WHERE category_slug = $1", [category]);
+    await dbQuery("DELETE FROM catalog_categories WHERE slug = $1", [category]).catch(() => undefined);
   }
   return NextResponse.json({ ok: true });
 }

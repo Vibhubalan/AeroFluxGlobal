@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { categories, site } from "@/lib/content";
 import { productImage } from "@/lib/images";
 import { useQuote } from "@/context/quote";
@@ -10,9 +10,21 @@ export function Header() {
   const path = usePathname();
   const { items } = useQuote();
   const [open, setOpen] = useState(false);
+  const [extra, setExtra] = useState<{ slug: string; shortTitle: string }[]>([]);
+  useEffect(() => {
+    fetch("/api/categories")
+      .then((response) => response.json())
+      .then((data) => {
+        if (!Array.isArray(data?.groups)) return;
+        const known = new Set(categories.map((item) => item.slug));
+        setExtra(data.groups.filter((item: { slug: string }) => !known.has(item.slug)).map((item: { slug: string; title: string }) => ({ slug: item.slug, shortTitle: item.title })));
+      })
+      .catch(() => undefined);
+  }, []);
+  const menu = [...categories, ...extra];
   const close = () => setOpen(false);
   const onProducts =
-    path === "/portfolio" || categories.some((c) => path === `/${c.slug}`);
+    path === "/portfolio" || menu.some((c) => path === `/${c.slug}`);
 
   return (
     <div className="sticky top-0 z-50 glass-bar">
@@ -41,7 +53,7 @@ export function Header() {
                   </Link>
                 </div>
                 <div className="grid grid-cols-5">
-                  {categories.map((item) => (
+                  {menu.map((item) => (
                     <Link key={item.slug} href={`/${item.slug}`} className="group/item p-3 hover:bg-sand">
                       <img
                         src={productImage(item.slug)}
