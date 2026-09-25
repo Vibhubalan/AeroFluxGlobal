@@ -2,7 +2,7 @@
 
 export function Footer() {
   return (
-    <footer className="glass-dark text-[#f3eee6]/85">
+    <footer className="glass-dark pb-[4.75rem] text-[#f3eee6]/85 md:pb-0">
         <div
           className="page-x flex flex-col gap-5 md:flex-row md:items-start md:justify-between pt-5 pb-4 md:gap-8 md:pt-10 md:pb-7"
         >
