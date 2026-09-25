@@ -225,6 +225,7 @@ export function DeskGate() {
     <div className="fixed inset-0 z-50 overflow-auto bg-[#101412] text-[#f3eee6]">
       <header className="flex items-center gap-6 border-b border-white/10 px-6 py-4">
         <button type="button" className={navBtn} onClick={() => setScreen("home")}>Desk</button>
+        <a className={navBtn} href="/">Go to site</a>
         <button type="button" className={`${navBtn} ml-auto`} onClick={() => { fetch("/api/desk/session", { method: "DELETE" }); setSignedIn(false); setScreen("home"); }}>Sign out</button>
       </header>
       <div className="mx-auto max-w-3xl px-6 py-10">
@@ -239,7 +240,10 @@ export function DeskGate() {
         {screen === "products" && (
           <>
             <button type="button" className={navBtn} onClick={() => setScreen("home")}>Back</button>
-            <h1 className="mt-3 text-3xl font-semibold">Products</h1>
+            <div className="mt-3 flex items-center justify-between gap-4">
+              <h1 className="text-3xl font-semibold">Products</h1>
+              <button type="button" className="rounded-lg bg-[#e07a4a] px-4 py-2 font-semibold text-[#1a100c]" onClick={() => { setCategory(categories[0]?.slug ?? ""); addItem(); }}>Add</button>
+            </div>
             <input className={`${field} mt-6`} placeholder="Search products" value={productQuery} onChange={(event) => setProductQuery(event.target.value)} />
             {productQueryText ? (
               <ul className="mt-4 grid gap-2">
@@ -304,6 +308,12 @@ export function DeskGate() {
             <button type="button" className={navBtn} onClick={() => setScreen("items")}>Back</button>
             <h1 className="mt-3 text-3xl font-semibold">{draftKey ? "Edit item" : "New item"}</h1>
             {saveError ? <p className="mt-4 text-[#e07a4a]">{saveError}</p> : null}
+            <label className={label}>Category</label>
+            <select className={field} value={editing.category} onChange={(event) => { setCategory(event.target.value); setEditing({ ...editing, category: event.target.value }); }}>
+              {categories.map((entry) => (
+                <option key={entry.slug} value={entry.slug}>{entry.title}</option>
+              ))}
+            </select>
             <label className={label}>Name</label>
             <input required className={field} value={editing.name} onChange={(event) => setEditing({ ...editing, name: event.target.value })} />
             <label className={label}>Image</label>

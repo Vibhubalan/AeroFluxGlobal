@@ -129,25 +129,23 @@ export function RfqForm() {
 
         <div className="space-y-1.5">
           <label className="text-[11px] font-semibold tracking-wider uppercase text-steel font-mono">
-            Company <span className="text-red">*</span>
+            Company
           </label>
           <Input
             name="company"
             placeholder="Enter your company name"
-            required
             className="glass-panel"
           />
         </div>
 
         <div className="space-y-1.5">
           <label className="text-[11px] font-semibold tracking-wider uppercase text-steel font-mono">
-            Email <span className="text-red">*</span>
+            Email
           </label>
           <Input
             name="email"
             type="email"
             placeholder="Enter your email"
-            required
             className="glass-panel"
           />
         </div>
@@ -156,8 +154,8 @@ export function RfqForm() {
           <label className="text-[11px] font-semibold tracking-wider uppercase text-steel font-mono">
             Phone <span className="text-red">*</span>
           </label>
-          <div className="flex gap-2">
-            <div ref={codeRef} className="relative w-[8.75rem] shrink-0">
+          <div className="flex min-w-0 gap-2">
+            <div ref={codeRef} className="relative w-[5.75rem] shrink-0">
               <input type="hidden" name="phone_code" value={phoneCode} />
               <button
                 type="button"
@@ -169,11 +167,11 @@ export function RfqForm() {
                 }}
                 className="flex h-11 w-full items-center justify-between rounded-lg border border-ink/15 glass-panel px-2.5 text-sm text-ink outline-none focus:border-red"
               >
-                <span>{phoneCode}</span>
+                <span>{phoneCode.split(" ").pop()}</span>
                 <ChevronDown className="h-4 w-4 shrink-0 text-ink" />
               </button>
               {codeOpen && (
-                <div className="absolute z-20 mt-1 w-64 overflow-hidden rounded-lg border border-black/10 bg-[#141414] shadow-none">
+                <div className="absolute left-0 z-20 mt-1 w-64 max-w-[calc(100vw-3rem)] overflow-hidden rounded-lg border border-black/10 bg-[#141414] shadow-none">
                   <input
                     autoFocus
                     value={codeQuery}
@@ -209,7 +207,7 @@ export function RfqForm() {
               type="tel"
               placeholder="Phone number"
               required
-              className="glass-panel"
+              className="glass-panel min-w-0 flex-1"
             />
           </div>
         </div>
@@ -239,11 +237,10 @@ export function RfqForm() {
 
       <div className="space-y-1.5">
         <label className="text-[11px] font-semibold tracking-wider uppercase text-steel font-mono">
-          Message <span className="text-red">*</span>
+          Message
         </label>
         <Textarea
           name="message"
-          required
           rows={3}
           placeholder="Please provide details about your requirements, specifications, quantity, delivery requirements, or any other relevant information."
           className="glass-panel"

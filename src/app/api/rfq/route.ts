@@ -11,11 +11,12 @@ export async function POST(request: Request) {
   const name = String(form.get("name") ?? "").trim();
   const company = String(form.get("company") ?? "").trim();
   const email = String(form.get("email") ?? "").trim();
-  const phone = `${String(form.get("phone_code") ?? "").trim()} ${String(form.get("phone") ?? "").trim()}`.trim();
+  const phoneNumber = String(form.get("phone") ?? "").trim();
+  const phone = `${String(form.get("phone_code") ?? "").trim()} ${phoneNumber}`.trim();
   const product = String(form.get("product") ?? "").trim();
   const quoteItems = String(form.get("quote_items") ?? "").trim();
   const message = String(form.get("message") ?? "").trim();
-  if (!name || !email || !message) {
+  if (!name || !phoneNumber) {
     return NextResponse.json({ ok: false }, { status: 400 });
   }
   const upload = readUpload(form.get("document"));
@@ -91,7 +92,7 @@ export async function POST(request: Request) {
     const payload: Record<string, unknown> = {
       from: from.includes("<") ? from : `AeroFlux Global <${from}>`,
       to,
-      reply_to: `${name} <${email}>`,
+      ...(email ? { reply_to: `${name} <${email}>` } : {}),
       subject: `Quote enquiry from ${company || name}`,
       text,
       html: mail.html,
