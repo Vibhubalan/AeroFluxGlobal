@@ -43,9 +43,6 @@ html {
   background: rgba(181, 67, 50, 0.72);
 }
 
-@media (max-width: 767px) {
-  body { padding-bottom: 4.75rem; }
-}
 body {
   color: var(--color-ink);
   font-size: 1rem;

@@ -79,9 +79,15 @@ export function Header() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden text-[13px] text-white/80"
+          className="md:hidden grid h-10 w-10 place-items-center text-white"
         >
-          {open ? "Close" : "Menu"}
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            {open ? (
+              <path d="M6 6l10 10M16 6L6 16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            ) : (
+              <path d="M4 6.5h14M4 11h14M4 15.5h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            )}
+          </svg>
         </button>
       </header>
 
@@ -90,13 +96,6 @@ export function Header() {
           <Link href="/" onClick={close}>Home</Link>
           <Link href="/about" onClick={close}>About</Link>
           <Link href="/portfolio" onClick={close}>Products</Link>
-          <div className="grid grid-cols-2 gap-2 text-[13px] text-white/50">
-            {categories.map((item) => (
-              <Link key={item.slug} href={`/${item.slug}`} onClick={close}>
-                {item.shortTitle}
-              </Link>
-            ))}
-          </div>
           <Link href="/contact" onClick={close}>Contact</Link>
           <Link href="/contact" onClick={close} className="btn-primary justify-center mt-1">
             Request a Quote

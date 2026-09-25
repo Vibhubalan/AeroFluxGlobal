@@ -4,11 +4,11 @@ export function Footer() {
   return (
     <footer className="glass-dark text-[#f3eee6]/85">
         <div
-          className="page-x flex flex-col gap-8 md:flex-row md:items-start md:justify-between pt-8 pb-6 md:pt-10 md:pb-7"
+          className="page-x flex flex-col gap-5 md:flex-row md:items-start md:justify-between pt-5 pb-4 md:gap-8 md:pt-10 md:pb-7"
         >
           {/* Brand */}
           <div>
-            <img src="/images/logo.png" alt={site.name} className="h-16 w-auto max-w-[280px] object-contain object-left mb-3 brightness-110" />
+            <img src="/images/logo.png" alt={site.name} className="mb-2 h-10 w-auto max-w-[200px] object-contain object-left brightness-110 md:mb-3 md:h-16 md:max-w-[280px]" />
             <p className="text-sm leading-relaxed">{site.legalName}</p>
             <p className="text-sm mt-1">{site.address}</p>
           </div>

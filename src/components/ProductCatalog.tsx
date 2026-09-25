@@ -60,26 +60,39 @@ export function ProductCatalog() {
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
                 />
                 <div
-                  className="absolute inset-0"
+                  className="absolute inset-0 hidden sm:block"
                   style={{
                     background:
                       "linear-gradient(to top, #2a261f 0%, rgba(42,38,31,0.92) 28%, rgba(42,38,31,0.4) 58%, transparent 78%)",
                   }}
                 />
-                <div className="absolute inset-x-0 bottom-0 flex items-end gap-2.5 p-3.5">
-                  <span className="font-mono text-[11px] text-white/80 tracking-wider">
+                <div className="absolute inset-x-0 bottom-0 hidden items-end gap-2.5 p-3.5 sm:flex">
+                  <span className="font-mono text-[11px] tracking-wider text-white/80">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block text-base font-semibold text-white leading-snug group-hover:text-red transition-colors">
+                    <span className="block text-base font-semibold leading-snug text-white transition-colors group-hover:text-red">
                       {item.title}
                     </span>
-                    <span className="mt-1 block text-sm text-white/90 leading-snug">
+                    <span className="mt-1 block text-sm leading-snug text-white/90">
                       {item.tagline}
                     </span>
                   </span>
-                  <ArrowUpRight className="mb-0.5 w-4 h-4 shrink-0 text-white/70 transition-colors group-hover:text-red" />
+                  <ArrowUpRight className="mb-0.5 h-4 w-4 shrink-0 text-white/70 transition-colors group-hover:text-red" />
                 </div>
+              </div>
+              <div className="flex items-start gap-2 p-3 sm:hidden">
+                <span className="font-mono text-[11px] tracking-wider text-steel">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-semibold leading-snug text-ink">
+                    {item.title}
+                  </span>
+                  <span className="mt-1 block text-xs leading-snug text-steel">
+                    {item.tagline}
+                  </span>
+                </span>
               </div>
             </Link>
           ))}
