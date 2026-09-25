@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { CategoryBrief, isCategoryBrief } from "@/components/CategoryBrief";
 import { CategoryItems } from "@/components/CategoryItems";
 import { categories, products } from "@/lib/content";
 import { productImage } from "@/lib/images";
@@ -43,6 +44,13 @@ export default async function CategoryPage({
   const { slug } = await params;
   const category = await categoryBySlug(slug);
   if (!category) notFound();
+  if (isCategoryBrief(slug)) {
+    return (
+      <div className="mesh min-h-screen">
+        <CategoryBrief slug={slug} />
+      </div>
+    );
+  }
   let items = products[category.slug as keyof typeof products] ?? [];
   try {
     const result = await dbQuery<CatalogRow>("SELECT * FROM catalog_items WHERE category_slug = $1 ORDER BY name", [slug]);

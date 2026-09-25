@@ -56,10 +56,6 @@
     }
   ],
   "turbine-engine-oil": [
-    { "id": "aeroshell-turbine-500", "name": "AeroShell Turbine Oil 500" },
-    { "id": "aeroshell-turbine-560", "name": "AeroShell Turbine Oil 560" },
-    { "id": "mobil-jet-ii", "name": "Mobil Jet Oil II" },
-    { "id": "mobil-jet-254", "name": "Mobil Jet Oil 254" },
     {
       "id": "eastman-2380",
       "name": "Eastman Turbo Oil 2380",
@@ -69,28 +65,11 @@
       "description": "Eastman Turbo Oil 2380 is a 5 cSt synthetic turbine oil used where high thermal stability and reliable oil consumption are required.",
       "applications": "Commercial and military turbine engines approved for this grade.",
       "specifications": ["SAE AS5780", "MIL-PRF-23699"]
-    },
-    { "id": "eastman-2197", "name": "Eastman Turbo Oil 2197" }
+    }
   ],
-  "aviation-greases": [
-    { "id": "aeroshell-grease-7", "name": "AeroShell Grease 7" },
-    { "id": "aeroshell-grease-22", "name": "AeroShell Grease 22" },
-    { "id": "aeroshell-grease-33", "name": "AeroShell Grease 33" },
-    { "id": "mobil-shc-100", "name": "Mobil Aviation Grease SHC 100" },
-    { "id": "aeroshell-grease-5", "name": "AeroShell Grease 5" },
-    { "id": "aeroshell-grease-6", "name": "AeroShell Grease 6" }
-  ],
-  "hydraulic-fluids": [
-    { "id": "aeroshell-fluid-41", "name": "AeroShell Fluid 41" },
-    { "id": "aeroshell-fluid-31", "name": "AeroShell Fluid 31" },
-    { "id": "skydrol-ld4", "name": "Skydrol LD-4" },
-    { "id": "skydrol-500b4", "name": "Skydrol 500B-4" },
-    { "id": "aeroshell-fluid-4", "name": "AeroShell Fluid 4" },
-    { "id": "hyjet-v", "name": "Exxon HyJet V" }
-  ],
+  "aviation-greases": [],
+  "hydraulic-fluids": [],
   "speciality-fluids": [
-    { "id": "aeroshell-fluid-12", "name": "AeroShell Fluid 12" },
-    { "id": "aeroshell-compound-07", "name": "AeroShell Compound 07" },
     {
       "id": "aeroshell-fluid-3",
       "name": "AeroShell Fluid 3",
@@ -100,49 +79,11 @@
       "description": "AeroShell Fluid 3 is a general-purpose mineral lubricating oil for aircraft instruments and general airframe use.",
       "applications": "Instruments, general airframe lubrication, and other approved light-duty uses.",
       "specifications": ["MIL-PRF-7870"]
-    },
-    { "id": "skydrol-pe5", "name": "Eastman Skydrol PE-5" },
-    { "id": "aeroshell-calibrating-2", "name": "AeroShell Calibrating Fluid 2" },
-    { "id": "aeroshell-fluid-5", "name": "AeroShell Fluid 5" }
+    }
   ],
-  "aviation-tyres": [
-    { "id": "michelin-air", "name": "Michelin Air" },
-    { "id": "dunlop-aero", "name": "Dunlop Aero" },
-    { "id": "goodyear-flight-custom", "name": "Goodyear Flight Custom" },
-    { "id": "michelin-aviator", "name": "Michelin Aviator" },
-    { "id": "dunlop-dr26", "name": "Dunlop DR26" },
-    { "id": "goodyear-flight-leader", "name": "Goodyear Flight Leader" }
-  ],
-  "aerospace-tapes-and-protection-films": [
-    { "id": "nitto-as-1946", "name": "Nitto AS-1946" },
-    { "id": "3m-tape-425", "name": "3M Aerospace Tape 425" },
-    { "id": "nitto-5025", "name": "Nitto 5025" },
-    { "id": "3m-protective-tape", "name": "3M Protective Tape" },
-    { "id": "nitto-surface-film", "name": "Nitto Surface Protection Film" },
-    { "id": "3m-venture-tape", "name": "3M Venture Tape" }
-  ],
-  "adhesives-and-sealants": [
-    { "id": "loctite-242", "name": "Loctite 242" },
-    { "id": "loctite-243", "name": "Loctite 243" },
-    { "id": "molykote-p37", "name": "Molykote P-37" },
-    { "id": "ppg-pr-1440", "name": "PPG PR-1440" },
-    { "id": "loctite-222", "name": "Loctite 222" },
-    { "id": "3m-ac-350", "name": "3M AC-350" }
-  ],
-  "cleaners-and-degreasers": [
-    { "id": "ardrox-9pr5", "name": "Ardrox 9PR5" },
-    { "id": "zok-27", "name": "ZOK 27" },
-    { "id": "lps-1", "name": "LPS 1" },
-    { "id": "lps-2", "name": "LPS 2" },
-    { "id": "lps-3", "name": "LPS 3" },
-    { "id": "ardrox-3961", "name": "Ardrox 3961" }
-  ],
-  "aircraft-spares": [
-    { "id": "engine-mounts", "name": "Engine Mounts" },
-    { "id": "filter-kit", "name": "Filter Kit" },
-    { "id": "seal-kit", "name": "Seal Kit" },
-    { "id": "ignition-leads", "name": "Ignition Leads" },
-    { "id": "bearing-set", "name": "Bearing Set" },
-    { "id": "hose-assembly", "name": "Hose Assembly" }
-  ]
+  "aviation-tyres": [],
+  "aerospace-tapes-and-protection-films": [],
+  "adhesives-and-sealants": [],
+  "cleaners-and-degreasers": [],
+  "aircraft-spares": []
 }
