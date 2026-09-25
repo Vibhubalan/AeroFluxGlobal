@@ -134,7 +134,7 @@ export function RfqForm() {
                 <ChevronDown className="h-4 w-4 shrink-0 text-ink" />
               </button>
               {codeOpen && (
-                <div className="absolute z-20 mt-1 w-64 overflow-hidden rounded-lg border border-black/10 bg-[#f7f3ec] shadow-none">
+                <div className="absolute z-20 mt-1 w-64 overflow-hidden rounded-lg border border-black/10 bg-[#141414] shadow-none">
                   <input
                     autoFocus
                     value={codeQuery}
@@ -187,9 +187,9 @@ export function RfqForm() {
             defaultValue=""
             className="flex h-11 w-full appearance-none rounded-lg border border-ink/15 glass-panel px-3.5 pr-10 text-sm text-ink outline-none focus:border-red"
           >
-            <option value="" className="bg-[#f7f3ec]">Select product or enquiry</option>
+            <option value="" className="bg-[#141414]">Select product or enquiry</option>
             {enquiryProducts.map((item) => (
-              <option key={item} value={item} className="bg-[#f7f3ec]">
+              <option key={item} value={item} className="bg-[#141414]">
                 {item}
               </option>
             ))}

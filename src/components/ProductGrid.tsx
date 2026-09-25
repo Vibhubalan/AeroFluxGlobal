@@ -67,7 +67,7 @@ export function ProductGrid() {
           onClick={explore}
           className="group flex flex-col items-center gap-3"
         >
-          <span className="grid h-12 w-12 place-items-center rounded-full border border-ink/20 text-ink transition-all duration-300 group-hover:border-[#2c2928] group-hover:bg-[#2c2928] group-hover:text-[#f4efe6] group-hover:translate-x-1">
+          <span className="grid h-12 w-12 place-items-center rounded-full border border-ink/20 text-ink transition-all duration-300 group-hover:border-[#e10600] group-hover:bg-[#e10600] group-hover:text-white group-hover:translate-x-1">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path d="M3.5 9h11M10 4.5 14.5 9 10 13.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

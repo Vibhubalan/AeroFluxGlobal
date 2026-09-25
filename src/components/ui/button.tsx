@@ -8,7 +8,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[#b54332] text-[#f4efe6] hover:bg-[#9a3829] rounded-md border border-transparent",
+          "bg-[#e10600] text-white hover:bg-[#c10500] rounded-md border border-transparent",
         destructive:
           "bg-red text-white hover:bg-red/90 rounded-md",
         outline:
@@ -22,7 +22,7 @@ const buttonVariants = cva(
         link:
           "text-red underline-offset-4 hover:underline",
         pill:
-          "bg-[#2c2928] text-[#f4efe6] hover:bg-[#3d3a38] rounded-full border border-transparent",
+          "bg-[#e10600] text-white hover:bg-[#c10500] rounded-full border border-transparent",
         pillOutline:
           "border border-ink/15 bg-transparent text-ink hover:border-red hover:text-red rounded-full",
       },

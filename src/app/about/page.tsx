@@ -97,12 +97,12 @@ export default function AboutPage() {
       {/* Story section */}
       <section className="page-x py-16 lg:py-24">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          <div className="lg:col-span-6 relative overflow-hidden rounded-3xl border border-ink/12 shadow-md aspect-[4/3]">
+          <div className="lg:col-span-6 relative overflow-hidden rounded-3xl border border-ink/12 shadow-md aspect-[16/9]">
             <img
-              src="/images/dummy/about.webp"
-              alt="Aircraft maintenance hangar operations"
-              width={1200}
-              height={900}
+              src="/images/dummy/about-story.webp"
+              alt="Aircraft engine and wing on a wet apron at dusk"
+              width={1024}
+              height={586}
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover"

@@ -12,15 +12,27 @@ The desk is not linked anywhere on the website.
 
 `robots.txt` asks crawlers not to index `/globaladmin/` or `/desk-a7k9/`. The old `/desk-a7k9/` address redirects to `/globaladmin/`.
 
-## One-time Hostinger setup
+## What runs where
+
+Hostinger only hosts the site and the PHP scripts. Two outside services do the rest:
+
+- **Resend** sends each quote email to `mail_to`.
+- **Cloudflare R2** stores product images.
+
+Quotes are still saved in MySQL (`rfq_submissions`) so **Check responses** can list them. Create that database in Hostinger. A database on another company is often blocked from Hostinger’s PHP.
+
+Leave `smtp_pass` empty. Resend is used when `resend_api_key` is set. Images go to R2 when the `r2_` keys are set.
+
+## One-time setup
 
 1. In hPanel, download a backup of the current `public_html`.
-2. Databases: create a MySQL database and user. Grant all privileges on that database.
-3. phpMyAdmin: import `sql/schema.sql`.
-4. Emails: create `sales@aerofluxglobal.com`. In DNS, keep Hostinger MX and SPF.
-5. Copy `public/config.example.php` to `public/config.php` (or to `private/aeroflux.php` one level above `public_html`).
-6. Fill database name, user, password, `resend_api_key`, and the R2 image keys. Quotes are stored in MySQL (`rfq_submissions`) and mailed to `mail_to` through Resend. Product images upload to R2 when those keys are set.
-7. Create the desk password hash and paste it into `admin_password_hash`:
+2. **Git:** hPanel → **Advanced → GIT**. Pull `https://github.com/Vibhubalan/AeroFluxGlobal.git`, branch `main`, into the site folder. On the computer, `npm install` then `npm run build`, and upload the **contents** of `dist/` into `public_html` (`index.html`, `rfq.php`, `item.php`, and `globaladmin/` at the web root). On later uploads, do not delete `uploads/rfq/`.
+3. **Database:** hPanel → **Databases → MySQL Databases**. Create a database and user. Grant all privileges. In phpMyAdmin, import `sql/schema.sql`.
+4. **Resend:** create an account, verify `aerofluxglobal.com`, and create an API key. The sending address must be on that domain, for example `sales@aerofluxglobal.com`.
+5. **Cloudflare R2:** create a bucket, turn on public access, and create an API token with Object Read & Write. Note the account id, access key, secret, bucket name, and the public URL (the `r2.dev` URL or your custom domain).
+6. Copy `public/config.example.php` to `public/config.php` (or to `private/aeroflux.php` one level above `public_html`).
+7. Fill `db_host` (`localhost`), `db_name`, `db_user`, `db_pass`, `mail_from`, `mail_to`, `resend_api_key`, and the five `r2_` fields.
+8. Create the desk password hash and paste it into `admin_password_hash`:
 
 ```
 php -r "echo password_hash('your-password', PASSWORD_DEFAULT), PHP_EOL;"

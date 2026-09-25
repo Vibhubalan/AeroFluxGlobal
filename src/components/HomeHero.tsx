@@ -73,9 +73,12 @@ export function HomeHero() {
               <Link href="/contact" className="btn-primary">Request a Quote</Link>
               <Link href="/portfolio" className="btn-ghost">Explore Products</Link>
             </div>
-            <ul className="mt-10 flex flex-wrap justify-center gap-8">
-              {pillars.map(([line, rest]) => (
-                <li key={line} className="text-sm leading-snug text-ink lg:text-base">
+            <ul className="mt-10 flex flex-wrap items-center justify-center">
+              {pillars.map(([line, rest], index) => (
+                <li
+                  key={line}
+                  className={`px-6 text-sm leading-snug text-ink lg:px-8 lg:text-base ${index > 0 ? "border-l border-white/30" : ""}`}
+                >
                   {line}
                   <br />
                   {rest}
@@ -115,15 +118,20 @@ export function HomeHero() {
             type="button"
             aria-label={`Slide ${dot + 1}`}
             onClick={() => setIndex(dot)}
-            className={`h-1.5 rounded-full transition-all ${dot === index ? "w-8 bg-[#1a1a1a]" : "w-3 bg-ink/25"}`}
+            className={`h-1.5 rounded-full transition-all ${dot === index ? "w-8 bg-white" : "w-3 bg-white/25"}`}
           />
         ))}
       </div>
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-px"
+        style={{ background: "linear-gradient(90deg, transparent, var(--color-amber) 18%, var(--color-amber) 82%, transparent)" }}
+        aria-hidden="true"
+      />
       <button
         type="button"
         aria-label="Previous slide"
         onClick={() => go(-1)}
-        className="absolute bottom-12 left-1 z-20 flex h-10 w-10 items-center justify-center text-ink/45 transition-colors hover:text-ink md:bottom-auto md:left-6 md:top-1/2 md:h-11 md:w-11 md:-translate-y-1/2"
+        className="absolute top-1/2 left-1 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-ink/45 transition-colors hover:text-ink md:left-6 md:h-11 md:w-11"
       >
         <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -133,17 +141,12 @@ export function HomeHero() {
         type="button"
         aria-label="Next slide"
         onClick={() => go(1)}
-        className="absolute bottom-12 right-1 z-20 flex h-10 w-10 items-center justify-center text-ink/45 transition-colors hover:text-ink md:bottom-auto md:right-6 md:top-1/2 md:h-11 md:w-11 md:-translate-y-1/2"
+        className="absolute top-1/2 right-1 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-ink/45 transition-colors hover:text-ink md:right-6 md:h-11 md:w-11"
       >
         <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </button>
-      <div
-        className="absolute inset-x-0 bottom-0 z-20 h-px"
-        style={{ background: "linear-gradient(90deg, transparent, var(--color-amber), transparent)" }}
-        aria-hidden="true"
-      />
     </section>
   );
 }

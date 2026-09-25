@@ -1,21 +1,250 @@
 [
-  { "name": "Eastman", "src": "/brands/brand-01.webp", "width": 360, "height": 96 },
-  { "name": "AeroShell", "src": "/brands/brand-02.webp", "width": 360, "height": 96 },
-  { "name": "ExxonMobil", "src": "/brands/brand-03.webp", "width": 360, "height": 96 },
-  { "name": "LPS", "src": "/brands/brand-04.webp", "width": 121, "height": 96 },
-  { "name": "NYCO", "src": "/brands/brand-05.webp", "width": 295, "height": 96 },
-  { "name": "ZOK", "src": "/brands/brand-06.webp", "width": 222, "height": 96 },
-  { "name": "PPG", "src": "/brands/brand-07.webp", "width": 127, "height": 96 },
-  { "name": "3M", "src": "/brands/brand-08.webp", "width": 170, "height": 96 },
-  { "name": "Nitto", "src": "/brands/brand-09.webp", "width": 399, "height": 96 },
-  { "name": "Molykote", "src": "/brands/brand-10.webp", "width": 309, "height": 96 },
-  { "name": "Loctite", "src": "/brands/brand-11.webp", "width": 420, "height": 91 },
-  { "name": "Michelin", "src": "/brands/brand-12.webp", "width": 287, "height": 96 },
-  { "name": "Dunlop", "src": "/brands/brand-13.webp", "width": 354, "height": 96 },
-  { "name": "Goodyear", "src": "/brands/brand-14.webp", "width": 420, "height": 85 },
-  { "name": "Momentive", "src": "/brands/brand-15.webp", "width": 420, "height": 60 },
-  { "name": "AkzoNobel", "src": "/brands/brand-16.webp", "width": 420, "height": 80 },
-  { "name": "Ardrox", "src": "/brands/brand-17.webp", "width": 397, "height": 96 },
-  { "name": "Permatex", "src": "/brands/brand-18.webp", "width": 346, "height": 96 },
-  { "name": "Magnaflux", "src": "/brands/brand-19.webp", "width": 420, "height": 85 }
+  {
+    "name": "3M",
+    "label": true
+  },
+  {
+    "name": "ACF-50",
+    "label": true
+  },
+  {
+    "name": "Airtech",
+    "label": true
+  },
+  {
+    "name": "AkzoNobel",
+    "label": true
+  },
+  {
+    "name": "Allwipe (Allchem)",
+    "label": true
+  },
+  {
+    "name": "Ambersil",
+    "label": true
+  },
+  {
+    "name": "American Fiber & Finishing",
+    "label": true
+  },
+  {
+    "name": "Aplix",
+    "label": true
+  },
+  {
+    "name": "Armite",
+    "label": true
+  },
+  {
+    "name": "Astroseal",
+    "label": true
+  },
+  {
+    "name": "Biobor",
+    "label": true
+  },
+  {
+    "name": "Bonderite",
+    "label": true
+  },
+  {
+    "name": "Bostik",
+    "label": true
+  },
+  {
+    "name": "Breyden Products",
+    "label": true
+  },
+  {
+    "name": "Callington",
+    "label": true
+  },
+  {
+    "name": "Castrol",
+    "label": true
+  },
+  {
+    "name": "Cerex Advanced Fabrics",
+    "label": true
+  },
+  {
+    "name": "Chemetall",
+    "label": true
+  },
+  {
+    "name": "Chemours",
+    "label": true
+  },
+  {
+    "name": "CHT",
+    "label": true
+  },
+  {
+    "name": "CRC Industries",
+    "label": true
+  },
+  {
+    "name": "Davies",
+    "label": true
+  },
+  {
+    "name": "Dow",
+    "label": true
+  },
+  {
+    "name": "Dykem (ITW)",
+    "label": true
+  },
+  {
+    "name": "Eastman",
+    "label": true
+  },
+  {
+    "name": "Elkem Silicones",
+    "label": true
+  },
+  {
+    "name": "Eurochem",
+    "label": true
+  },
+  {
+    "name": "ExxonMobil",
+    "label": true
+  },
+  {
+    "name": "Generic desiccant",
+    "label": true
+  },
+  {
+    "name": "Generic solvent",
+    "label": true
+  },
+  {
+    "name": "Hexcel",
+    "label": true
+  },
+  {
+    "name": "Huntsman",
+    "label": true
+  },
+  {
+    "name": "Hylomar",
+    "label": true
+  },
+  {
+    "name": "Indestructible Paints",
+    "label": true
+  },
+  {
+    "name": "ITW Devcon",
+    "label": true
+  },
+  {
+    "name": "Kroil",
+    "label": true
+  },
+  {
+    "name": "Loctite",
+    "label": true
+  },
+  {
+    "name": "LPS Labs",
+    "label": true
+  },
+  {
+    "name": "Magnaflux",
+    "label": true
+  },
+  {
+    "name": "Malin Co.",
+    "label": true
+  },
+  {
+    "name": "Microb-Monitor",
+    "label": true
+  },
+  {
+    "name": "Molykote",
+    "label": true
+  },
+  {
+    "name": "Momentive",
+    "label": true
+  },
+  {
+    "name": "Nyco",
+    "label": true
+  },
+  {
+    "name": "Panolam",
+    "label": true
+  },
+  {
+    "name": "Permali",
+    "label": true
+  },
+  {
+    "name": "Polyken (Vybond)",
+    "label": true
+  },
+  {
+    "name": "PPG Aerospace",
+    "label": true
+  },
+  {
+    "name": "Relink",
+    "label": true
+  },
+  {
+    "name": "RMP Plastics",
+    "label": true
+  },
+  {
+    "name": "Rocol",
+    "label": true
+  },
+  {
+    "name": "Sharpie",
+    "label": true
+  },
+  {
+    "name": "Shell Aviation",
+    "label": true
+  },
+  {
+    "name": "SkyMark",
+    "label": true
+  },
+  {
+    "name": "Socomore",
+    "label": true
+  },
+  {
+    "name": "Strutwipe",
+    "label": true
+  },
+  {
+    "name": "SurTec",
+    "label": true
+  },
+  {
+    "name": "Syensqo",
+    "label": true
+  },
+  {
+    "name": "Tacky Tape",
+    "label": true
+  },
+  {
+    "name": "WD-40 Company",
+    "label": true
+  },
+  {
+    "name": "Winton",
+    "label": true
+  },
+  {
+    "name": "Zip-Chem",
+    "label": true
+  }
 ]

@@ -3,16 +3,57 @@
     {
       "id": "aeroshell-w-15w-50",
       "name": "AeroShell Oil W 15W-50",
+      "image": "/images/products/aeroshell-w-15w-50.webp",
       "packs": ["6x1 USQ", "208.1 L"],
-      "description": "AeroShell Oil W 15W-50 is a premium semi-synthetic multigrade oil for aviation piston engines. It is formulated for all-season use, with ashless dispersant technology and anti-wear additives.",
+      "description": "Engineered for all-season performance and advanced engine protection, AeroShell Oil W 15W-50 is a premium semi-synthetic multigrade oil formulated by blending high-quality mineral base stocks with over 50% synthetic hydrocarbon fluids. Eliminates seasonal oil changes while delivering rapid cold-weather startup flow and high-temperature film strength. Features ashless dispersant technology, non-metallic anti-rust additives, and the Lycoming LW 16702 anti-wear additive to protect critical camshafts and lifters.",
       "applications": "All-season use in aviation piston engines requiring anti-wear, anti-rust, and sludge prevention.",
       "specifications": ["SAE J1899 (supersedes MIL-L-22851)"]
     },
-    { "id": "aeroshell-sport-plus-4", "name": "AeroShell Oil Sport Plus 4" },
-    { "id": "aeroshell-oil-100", "name": "AeroShell Oil 100" },
-    { "id": "aeroshell-w100-plus", "name": "AeroShell Oil W100 Plus" },
-    { "id": "aeroshell-oil-w120", "name": "AeroShell Oil W120" },
-    { "id": "aeroshell-oil-w100", "name": "AeroShell Oil W100" }
+    {
+      "id": "aeroshell-sport-plus-4",
+      "name": "AeroShell Oil Sport Plus 4",
+      "image": "/images/products/aeroshell-sport-plus-4.webp",
+      "packs": ["12x1 L"],
+      "description": "Engineered in direct partnership with ROTAX, AeroShell Oil Sport Plus 4 is the first dedicated aviation engine oil specially developed for four-stroke light sport piston engines. Utilizing high-quality hydrocarbon base stocks enriched with synthetic technology, it accommodates lower cylinder head temperatures and low oil consumption while maintaining exceptional stability across all operating climates and fuel types.",
+      "applications": "Four-stroke light sport piston engines (including ROTAX 912 and 914 series), automotive-derived engines (carbureted, fuel-injected, turbocharged) that cannot run on traditional ashless dispersant oils.",
+      "specifications": ["N/A (No direct US Military Specification)", "API SL", "JASO MA", "VW 502.00", "Teledyne Continental MHS 24B", "Rotax SI-912-016/SI-914-019", "Russian Grade MS-20"]
+    },
+    {
+      "id": "aeroshell-oil-100",
+      "name": "AeroShell Oil 100",
+      "image": "/images/products/aeroshell-oil-100.webp",
+      "packs": ["6x1 USQ", "208.1 L"],
+      "description": "Blended from high viscosity index mineral base stocks, AeroShell Oil 100 is an ashless straight mineral oil designed for certified four-stroke aircraft reciprocating piston engines and radial engines calling for non-dispersant lubricants. Contains minimal additives beyond antioxidants and targeted pour-point depressants for low-temperature fluidity.",
+      "applications": "Break-in period of new or recently overhauled aviation piston engines to allow proper ring seating (excluding Porsche).",
+      "specifications": ["SAE J1966 Grade 50 (supersedes MIL-L-6082 Grade 100)", "AIR 3560/D Grade SAE 50"]
+    },
+    {
+      "id": "aeroshell-w100-plus",
+      "name": "AeroShell Oil W100 Plus",
+      "image": "/images/products/aeroshell-w100-plus.webp",
+      "packs": ["6x1 USQ"],
+      "description": "Combining premium single-grade ashless dispersant performance with advanced protection, AeroShell Oil W100 Plus is an SAE Grade 50 piston engine oil designed for single-grade reliability with elite anti-wear and anti-corrosion defense. Incorporates the proven AeroShell W additive package, additional anti-corrosion chemistry, and the Lycoming LW 16702 anti-wear additive to protect camshafts and lifters during idle periods and reach TBO. Fully compatible with other approved aviation piston engine oils.",
+      "applications": "Certified aviation piston engines requiring SAE Grade 50 protection.",
+      "specifications": ["SAE J1899 Grade 50 (supersedes MIL-L-22851)"]
+    },
+    {
+      "id": "aeroshell-oil-w120",
+      "name": "AeroShell Oil W120",
+      "image": "/images/products/aeroshell-oil-w120.webp",
+      "packs": ["208.1 L"],
+      "description": "Delivering high-viscosity non-ash dispersant performance, AeroShell Oil W120 combines select high viscosity index mineral base stocks with non-metallic additives to ensure superior stability, dispersancy, and anti-foaming protection with zero metallic ash residues. Maintains engine cleanliness, keeps internal components sludge-free, reduces oil consumption, and protects critical parts against scuffing to help reach TBO.",
+      "applications": "Heavy-duty, four-stroke certified reciprocating aircraft engines operating under hot conditions or high stress.",
+      "specifications": ["SAE J1899 Grade SAE 60 (supersedes MIL-L-22851D)", "AIR 3570 Grade SAE 60", "OMD-370"]
+    },
+    {
+      "id": "aeroshell-oil-w100",
+      "name": "AeroShell Oil W100",
+      "image": "/images/products/aeroshell-oil-w100.webp",
+      "packs": ["6x1 USQ", "208.1 L"],
+      "description": "Pioneering non-ash dispersant technology for aviation piston engines, AeroShell Oil W100 combines high viscosity index base stocks with non-metallic additives to ensure exceptional stability, dispersancy, and anti-foaming protection. Eliminates metallic ash residues to prevent combustion chamber deposits and spark plug fouling, keeping engines sludge-free, reducing oil consumption, and protecting against scuffing to reach TBO.",
+      "applications": "Certified four-stroke reciprocating piston engines (including fuel-injected and turbocharged models).",
+      "specifications": ["SAE J1899 Grade SAE 50 (supersedes MIL-L-22851)", "AIR 3570", "Russian Grade MS-20", "OMD-250"]
+    }
   ],
   "turbine-engine-oil": [
     { "id": "aeroshell-turbine-500", "name": "AeroShell Turbine Oil 500" },

@@ -23,7 +23,7 @@ export function QuoteDock() {
 
         <Link
           href="/contact"
-          className="relative flex items-center justify-center gap-2 h-11 rounded-lg bg-[#f4efe6] text-[#2c2928] text-xs font-semibold shadow-sm hover:bg-white transition-colors"
+          className="relative flex items-center justify-center gap-2 h-11 rounded-lg bg-[#e10600] text-white text-xs font-semibold shadow-sm hover:bg-[#c10500] transition-colors"
         >
           <Send className="w-3.5 h-3.5" />
           <span>Request RFQ</span>

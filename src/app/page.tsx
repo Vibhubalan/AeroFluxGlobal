@@ -1,4 +1,4 @@
-﻿import { HomeClose } from "@/components/HomeClose";
+import { HomeClose } from "@/components/HomeClose";
 import { HomeHero } from "@/components/HomeHero";
 import { Partners } from "@/components/Partners";
 import { ProductGrid } from "@/components/ProductGrid";
@@ -26,7 +26,7 @@ export default function HomePage() {
           Products
         </h2>
         <ProductGrid />
-        <p className="font-mono uppercase text-steel mt-10 tracking-[0.18em]" style={{ fontSize: "0.68rem" }}>
+        <p className="mt-10 hidden font-mono uppercase tracking-[0.18em] text-steel md:block" style={{ fontSize: "0.68rem" }}>
           Source <span className="text-ink/25 mx-2">→</span>
           Verify <span className="text-ink/25 mx-2">→</span>
           Dispatch

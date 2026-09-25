@@ -6,7 +6,6 @@ import { useState } from "react";
 import { categories, site } from "@/lib/content";
 import { productImage } from "@/lib/images";
 import { useQuote } from "@/context/quote";
-
 export function Header() {
   const path = usePathname();
   const { items } = useQuote();
@@ -75,12 +74,12 @@ export function Header() {
         </nav>
 
         <button
-          type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="md:hidden grid h-10 w-10 place-items-center text-white"
-        >
+            type="button"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="md:hidden grid h-10 w-10 place-items-center text-white"
+          >
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
             {open ? (
               <path d="M6 6l10 10M16 6L6 16" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />

@@ -1,4 +1,4 @@
-﻿import { site } from "@/lib/content";
+import { site } from "@/lib/content";
 
 export function Footer() {
   return (
@@ -54,7 +54,7 @@ export function Footer() {
         >
           <p>{site.copyright}</p>
           <p className="font-mono tracking-widest" style={{ fontSize: "0.6rem" }}>
-            MIDDLE EAST · INDIA · AFRICA
+            Middle East • Africa • Asia • Europe
           </p>
         </div>
     </footer>
