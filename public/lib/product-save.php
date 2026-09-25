@@ -169,7 +169,7 @@ function aero_save_product(PDO $pdo): string
     }
     if ($recordId > 0) {
         $statement = $pdo->prepare(
-            'UPDATE catalog_items SET category_slug=?, item_id=?, name=?, image=?, packs=?, description=?, applications=?, specifications=?, summary=?, featured=? WHERE id=?'
+            'UPDATE catalog_items SET category_slug=?, item_id=?, name=?, image=?, packs=CAST(? AS jsonb), description=?, applications=?, specifications=CAST(? AS jsonb), summary=?, featured=? WHERE id=?'
         );
         $statement->execute([
             $category, $itemId, $name, $image,
@@ -179,7 +179,7 @@ function aero_save_product(PDO $pdo): string
     }
     $statement = $pdo->prepare(
         'INSERT INTO catalog_items (category_slug, item_id, name, image, packs, description, applications, specifications, summary, featured)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+         VALUES (?, ?, ?, ?, CAST(? AS jsonb), ?, ?, CAST(? AS jsonb), ?, ?)'
     );
     $statement->execute([
         $category, $itemId, $name, $image,

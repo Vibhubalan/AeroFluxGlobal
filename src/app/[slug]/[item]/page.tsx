@@ -2,8 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categories } from "@/lib/content";
-import { categoryProducts, findProduct, productDetail } from "@/lib/catalog";
+import { categoryProducts, findProduct, productDetail, type ProductRecord } from "@/lib/catalog";
 import { ItemPurchase } from "@/components/ItemPurchase";
+import { dbConfigured, dbQuery, publicItem, type CatalogRow } from "@/lib/server/db";
+
+export const dynamic = "force-dynamic";
+
+async function liveProduct(category: string, id: string): Promise<ProductRecord | null> {
+  if (!dbConfigured()) return null;
+  try {
+    const result = await dbQuery<CatalogRow>(
+      "SELECT * FROM catalog_items WHERE category_slug = $1 AND item_id = $2 LIMIT 1",
+      [category, id],
+    );
+    const row = result.rows[0];
+    if (!row) return null;
+    const item = publicItem(row);
+    return { ...item, category: item.category };
+  } catch {
+    return null;
+  }
+}
 
 export function generateStaticParams() {
   return categories.flatMap((category) =>
@@ -20,7 +39,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string; item: string }>;
 }): Promise<Metadata> {
   const { slug, item } = await params;
-  const product = findProduct(slug, item);
+  const product = (await liveProduct(slug, item)) ?? findProduct(slug, item);
   if (!product) return {};
   return { title: `${product.name} · AeroFlux Global` };
 }
@@ -32,7 +51,7 @@ export default async function ItemPage({
 }) {
   const { slug, item } = await params;
   const category = categories.find((entry) => entry.slug === slug);
-  const product = findProduct(slug, item);
+  const product = (await liveProduct(slug, item)) ?? findProduct(slug, item);
   if (!category || !product) notFound();
   const detail = productDetail(product);
 

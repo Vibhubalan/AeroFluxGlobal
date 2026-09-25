@@ -25,7 +25,7 @@ export function FeaturedProducts() {
   const [items, setItems] = useState(initial);
 
   useEffect(() => {
-    fetch("/api/items.php?featured=1")
+    fetch("/api/items?featured=1")
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         if (Array.isArray(data?.items) && data.items.length > 0) {

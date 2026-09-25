@@ -49,7 +49,7 @@ function aero_public_item(array $row): array
         'category' => (string) $row['category_slug'],
         'name' => (string) $row['name'],
         'image' => $image,
-        'featured' => (int) ($row['featured'] ?? 0) === 1,
+        'featured' => aero_flag($row['featured'] ?? false),
         'packs' => $detail['packs'],
         'description' => $detail['description'],
         'applications' => $detail['applications'],
@@ -101,7 +101,7 @@ function aero_items(?string $category = null, bool $featuredOnly = false): array
             $params[] = $category;
         }
         if ($featuredOnly) {
-            $where[] = 'featured = 1';
+            $where[] = 'featured = TRUE';
         }
         if ($where !== []) {
             $sql .= ' WHERE ' . implode(' AND ', $where);

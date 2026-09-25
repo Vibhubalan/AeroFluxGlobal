@@ -26,11 +26,6 @@ export default function HomePage() {
           Products
         </h2>
         <ProductGrid />
-        <p className="mt-10 hidden font-mono uppercase tracking-[0.18em] text-steel md:block" style={{ fontSize: "0.68rem" }}>
-          Source <span className="text-ink/25 mx-2">→</span>
-          Verify <span className="text-ink/25 mx-2">→</span>
-          Dispatch
-        </p>
       </section>
       </Reveal>
 

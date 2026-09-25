@@ -15,8 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'impor
         $count = 0;
         $statement = $pdo->prepare(
             'INSERT INTO catalog_items (category_slug, item_id, name, image, packs, description, applications, specifications, summary, featured)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-             ON DUPLICATE KEY UPDATE name=VALUES(name), image=VALUES(image), packs=VALUES(packs), description=VALUES(description), applications=VALUES(applications), specifications=VALUES(specifications), summary=VALUES(summary), featured=VALUES(featured)'
+             VALUES (?, ?, ?, ?, CAST(? AS jsonb), ?, ?, CAST(? AS jsonb), ?, ?)
+             ON CONFLICT (category_slug, item_id) DO UPDATE SET
+               name=EXCLUDED.name, image=EXCLUDED.image, packs=EXCLUDED.packs, description=EXCLUDED.description,
+               applications=EXCLUDED.applications, specifications=EXCLUDED.specifications, summary=EXCLUDED.summary, featured=EXCLUDED.featured'
         );
         foreach (aero_items_from_json() as $item) {
             $statement->execute([

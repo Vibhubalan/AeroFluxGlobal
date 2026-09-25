@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function RfqSentPage() {
   return (
-    <div className="mesh min-h-[70vh] flex items-center">
-      <section className="page-x py-20 w-full max-w-3xl">
+    <div className="mesh min-h-[70vh] flex items-center justify-center">
+      <section className="page-x py-20 w-full max-w-3xl mx-auto">
         <div className="rounded-3xl border border-emerald-600/20 glass-panel backdrop-blur-md p-8 sm:p-12 shadow-none">
           <div className="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-200">
             <CheckCircle2 className="w-8 h-8" />

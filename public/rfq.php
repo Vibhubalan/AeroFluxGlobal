@@ -101,16 +101,16 @@ $submissionId = 0;
 if ($pdo instanceof PDO) {
     $statement = $pdo->prepare(
         'INSERT INTO rfq_submissions (name, company, email, phone, product, quote_items, message, attachment_path, mail_sent)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0)'
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, FALSE) RETURNING id'
     );
     $statement->execute([$name, $company, $email, $phone, $product, $quoteItems, $message, $storedName]);
-    $submissionId = (int) $pdo->lastInsertId();
+    $submissionId = (int) $statement->fetchColumn();
     $saved = $submissionId > 0;
 }
 
 $sent = aero_send_mail($to, $subject, $text, $attachment, $name, $email);
 if ($sent && $pdo instanceof PDO && $submissionId > 0) {
-    $pdo->prepare('UPDATE rfq_submissions SET mail_sent = 1 WHERE id = ?')->execute([$submissionId]);
+    $pdo->prepare('UPDATE rfq_submissions SET mail_sent = TRUE WHERE id = ?')->execute([$submissionId]);
 }
 
 if ($saved || $sent) {

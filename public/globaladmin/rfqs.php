@@ -20,7 +20,7 @@ if (!$pdo instanceof PDO) {
     foreach ($rows as $row) {
         $body .= '<tr><td><a href="' . desk_url('rfq.php') . '?id=' . (int) $row['id'] . '">' . aero_h((string) $row['created_at']) . '</a></td>';
         $body .= '<td>' . aero_h((string) $row['company']) . '</td><td>' . aero_h((string) $row['name']) . '<br>' . aero_h((string) $row['email']) . '</td>';
-        $body .= '<td>' . aero_h((string) $row['product']) . '</td><td>' . ((int) $row['mail_sent'] === 1 ? 'Sent' : 'Stored') . '</td></tr>';
+        $body .= '<td>' . aero_h((string) $row['product']) . '</td><td>' . (aero_flag($row['mail_sent']) ? 'Sent' : 'Stored') . '</td></tr>';
     }
     $body .= '</table>';
 }

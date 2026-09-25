@@ -79,7 +79,7 @@ foreach ($specs as $spec) {
 }
 $body .= '</div><p><button class="ghost" type="button" id="add-spec">Add bullet</button></p>';
 $body .= '<label>Short summary</label><input name="summary" value="' . aero_h((string) $row['summary']) . '">';
-$body .= '<label><input type="checkbox" name="featured" style="width:auto"' . ((int) $row['featured'] === 1 ? ' checked' : '') . '> Featured</label>';
+$body .= '<label><input type="checkbox" name="featured" style="width:auto"' . (aero_flag($row['featured']) ? ' checked' : '') . '> Featured</label>';
 $body .= '<p><button type="submit">Save item</button></p></form></div>';
 $body .= '<script>
   function addRow(id, name, placeholder) {

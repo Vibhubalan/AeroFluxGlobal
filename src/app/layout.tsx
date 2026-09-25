@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Global sourcing and rapid dispatch of certified lubricants, fluids, MRO products with full trace documentation.",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
   },
 };
 

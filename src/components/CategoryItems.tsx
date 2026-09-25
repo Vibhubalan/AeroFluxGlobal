@@ -24,7 +24,7 @@ export function CategoryItems({
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/items.php?c=${encodeURIComponent(category)}`)
+    fetch(`/api/items?c=${encodeURIComponent(category)}`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data) => {
         if (!cancelled && Array.isArray(data?.items) && data.items.length > 0) {

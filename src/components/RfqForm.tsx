@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useQuote } from "@/context/quote";
 import { dialCodes, enquiryProducts } from "@/data/dial-codes";
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,9 @@ import { Send, UploadCloud, AlertCircle, CheckCircle2, ChevronDown } from "lucid
 export function RfqForm() {
   const { items } = useQuote();
   const [fileName, setFileName] = useState("");
+  const [sent, setSent] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const sendingLock = useRef(false);
   const [phoneCode, setPhoneCode] = useState("AE +971");
   const [codeOpen, setCodeOpen] = useState(false);
   const [codeQuery, setCodeQuery] = useState("");
@@ -35,12 +38,43 @@ export function RfqForm() {
     return () => document.removeEventListener("mousedown", close);
   }, [codeOpen]);
 
+  function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (sendingLock.current) return;
+    const form = event.currentTarget;
+    if (!form.reportValidity()) return;
+    sendingLock.current = true;
+    setFailed(false);
+    setSent(true);
+    const body = new FormData(form);
+    void fetch("/api/rfq", { method: "POST", body })
+      .then((response) => {
+        if (!response.ok || response.url.includes("rfq-error")) {
+          sendingLock.current = false;
+          setFailed(true);
+        }
+      })
+      .catch(() => {
+        sendingLock.current = false;
+        setFailed(true);
+      });
+  }
+
   return (
+    <>
+    {sent && !failed ? (
+      <div className="rounded-2xl border border-ink/12 glass-panel p-5">
+        <CheckCircle2 className="mb-3 h-6 w-6 text-ink" />
+        <h2 className="font-display text-2xl text-ink">Your RFQ has reached the desk.</h2>
+        <p className="mt-2 text-sm text-steel">We have your details. The desk will reply with availability and the next step.</p>
+      </div>
+    ) : null}
     <form
-      className="rounded-2xl border border-ink/12 glass-panel p-5 shadow-none grid gap-4"
-      action="/rfq.php"
+      className={`rounded-2xl border border-ink/12 glass-panel p-5 shadow-none grid gap-4 ${sent && !failed ? "hidden" : ""}`}
+      action="/api/rfq"
       method="post"
       encType="multipart/form-data"
+      onSubmit={onSubmit}
     >
       <div>
         <h2 className="font-display text-2xl text-ink">Send us your enquiry</h2>
@@ -215,17 +249,24 @@ export function RfqForm() {
         <p className="text-[11px] font-semibold tracking-wider uppercase text-steel font-mono">
           RFQ Document / File Upload
         </p>
-        <label className="relative block cursor-pointer border-2 border-dashed border-ink/15 hover:border-red/60 transition-colors rounded-xl px-4 py-6 glass-panel text-center">
-          <UploadCloud className="mx-auto mb-2 h-6 w-6 text-red" />
-          <span className="block text-sm font-semibold text-ink">
-            Drag & drop your file here or <span className="text-red">browse</span>
-          </span>
-          <span className="mt-1 block text-xs text-steel">
-            PDF, DOC, DOCX, XLS, XLSX, JPG, PNG — Maximum 10MB
-          </span>
-          <span className="mt-2 block text-xs font-semibold text-red">
-            {fileName || "No file selected"}
-          </span>
+        <label className={`relative block cursor-pointer border-2 border-dashed rounded-xl px-4 py-6 glass-panel text-center transition-colors ${fileName ? "border-ink/40" : "border-ink/15 hover:border-red/60"}`}>
+          {fileName ? (
+            <>
+              <CheckCircle2 className="mx-auto mb-2 h-6 w-6 text-ink" />
+              <span className="block text-sm font-semibold text-ink">Attached</span>
+              <span className="mt-1 block text-xs text-steel">{fileName}</span>
+            </>
+          ) : (
+            <>
+              <UploadCloud className="mx-auto mb-2 h-6 w-6 text-red" />
+              <span className="block text-sm font-semibold text-ink">
+                Drag & drop your file here or <span className="text-red">browse</span>
+              </span>
+              <span className="mt-1 block text-xs text-steel">
+                PDF, DOC, DOCX, XLS, XLSX, JPG, PNG — Maximum 10MB
+              </span>
+            </>
+          )}
           <input
             name="document"
             type="file"
@@ -237,6 +278,7 @@ export function RfqForm() {
       </div>
 
       <div className="pt-2">
+        {failed ? <p className="text-sm text-red">The quote could not be sent. Try again.</p> : null}
         <Button
           type="submit"
           size="lg"
@@ -251,5 +293,6 @@ export function RfqForm() {
         </p>
       </div>
     </form>
+    </>
   );
 }

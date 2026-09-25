@@ -14,24 +14,23 @@ The desk is not linked anywhere on the website.
 
 ## What runs where
 
-Hostinger only hosts the site and the PHP scripts. Two outside services do the rest:
+Hostinger only hosts the site and the PHP scripts. Three outside services do the rest:
 
-- **Resend** sends each quote email to `mail_to`.
+- **Neon** stores products (`catalog_items`) and enquiries (`rfq_submissions`).
 - **Cloudflare R2** stores product images.
+- **Resend** sends each quote email to `mail_to`.
 
-Quotes are still saved in MySQL (`rfq_submissions`) so **Check responses** can list them. Create that database in Hostinger. A database on another company is often blocked from Hostinger’s PHP.
-
-Leave `smtp_pass` empty. Resend is used when `resend_api_key` is set. Images go to R2 when the `r2_` keys are set.
+Leave `smtp_pass` empty. Resend is used when `resend_api_key` is set. Images go to R2 when the five `r2_` keys are set. Hostinger sometimes blocks PHP from reaching Neon. If the desk says the database is not connected after the keys are filled in, the host is blocking that connection.
 
 ## One-time setup
 
 1. In hPanel, download a backup of the current `public_html`.
 2. **Git:** hPanel → **Advanced → GIT**. Pull `https://github.com/Vibhubalan/AeroFluxGlobal.git`, branch `main`, into the site folder. On the computer, `npm install` then `npm run build`, and upload the **contents** of `dist/` into `public_html` (`index.html`, `rfq.php`, `item.php`, and `globaladmin/` at the web root). On later uploads, do not delete `uploads/rfq/`.
-3. **Database:** hPanel → **Databases → MySQL Databases**. Create a database and user. Grant all privileges. In phpMyAdmin, import `sql/schema.sql`.
-4. **Resend:** create an account, verify `aerofluxglobal.com`, and create an API key. The sending address must be on that domain, for example `sales@aerofluxglobal.com`.
+3. **Neon:** create a project, open the SQL editor, and run `sql/schema.sql`. From the connection string, copy the host (hostname only), database, user, and password. Use port `5432`.
+4. **Resend:** create an account, verify `aerofluxglobal.com`, and create an API key. The sending address must be on that domain, for example `sales@aerofluxglobal.com`. The temporary `hostingersite.com` address cannot send mail.
 5. **Cloudflare R2:** create a bucket, turn on public access, and create an API token with Object Read & Write. Note the account id, access key, secret, bucket name, and the public URL (the `r2.dev` URL or your custom domain).
-6. Copy `public/config.example.php` to `public/config.php` (or to `private/aeroflux.php` one level above `public_html`).
-7. Fill `db_host` (`localhost`), `db_name`, `db_user`, `db_pass`, `mail_from`, `mail_to`, `resend_api_key`, and the five `r2_` fields.
+6. Copy `public/config.example.php` to `private/aeroflux.php` one level above `public_html`.
+7. Fill `db_host`, `db_port`, `db_name`, `db_user`, `db_pass`, `mail_from`, `mail_to`, `resend_api_key`, and the five `r2_` fields.
 8. Create the desk password hash and paste it into `admin_password_hash`:
 
 ```
@@ -49,8 +48,8 @@ Upload the **contents** of `dist/` into `public_html` (so `index.html`, `rfq.php
 
 ## After the first upload
 
-1. Desk → Products → **Import current catalog**. This loads the existing items into MySQL.
-2. Submit a test enquiry on `/contact`. Confirm the row in phpMyAdmin and the mail in `sales@`.
+1. Desk → Products → **Import current catalog**. This loads the existing items into Neon.
+2. Submit a test enquiry on `/contact`. Confirm the row in the Neon SQL editor and the mail in `sales@`.
 3. Add a product in the desk (image, pack sizes, description, applications, specification bullets). Open `/category-slug/item-id` and confirm it shows without another build.
 
 ## What needs a rebuild
