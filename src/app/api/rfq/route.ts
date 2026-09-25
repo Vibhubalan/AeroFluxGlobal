@@ -6,7 +6,7 @@ import { putStoredFile, readUpload, storageConfigured } from "@/lib/server/stora
 export async function POST(request: Request) {
   const form = await request.formData();
   if (String(form.get("company_website") ?? "").trim() !== "") {
-    return NextResponse.redirect(new URL("/rfq-sent", request.url), 303);
+    return NextResponse.json({ ok: true });
   }
   const name = String(form.get("name") ?? "").trim();
   const company = String(form.get("company") ?? "").trim();
@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   const quoteItems = String(form.get("quote_items") ?? "").trim();
   const message = String(form.get("message") ?? "").trim();
   if (!name || !email || !message) {
-    return NextResponse.redirect(new URL("/rfq-error", request.url), 303);
+    return NextResponse.json({ ok: false }, { status: 400 });
   }
   const upload = readUpload(form.get("document"));
   let attachment: { filename: string; type: string; bytes: Buffer; content: string } | null = null;
@@ -43,14 +43,14 @@ export async function POST(request: Request) {
   let storedPath: string | null = null;
   if (attachment) {
     if (!storageConfigured()) {
-      return NextResponse.redirect(new URL("/rfq-error", request.url), 303);
+      return NextResponse.json({ ok: false }, { status: 500 });
     }
     const safeName = attachment.filename.replace(/[^a-zA-Z0-9._-]+/g, "-").slice(-80);
     storedPath = `enquiries/${Date.now()}-${safeName}`;
     try {
       await putStoredFile(storedPath, attachment.bytes, attachment.type);
     } catch {
-      return NextResponse.redirect(new URL("/rfq-error", request.url), 303);
+      return NextResponse.json({ ok: false }, { status: 500 });
     }
   }
   let submissionId = 0;
@@ -114,7 +114,7 @@ export async function POST(request: Request) {
     }
   }
   if (!sent && submissionId === 0) {
-    return NextResponse.redirect(new URL("/rfq-error", request.url), 303);
+    return NextResponse.json({ ok: false }, { status: 500 });
   }
-  return NextResponse.redirect(new URL("/rfq-sent", request.url), 303);
+  return NextResponse.json({ ok: true });
 }

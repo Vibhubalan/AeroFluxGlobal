@@ -49,7 +49,7 @@ export function RfqForm() {
     const body = new FormData(form);
     void fetch("/api/rfq", { method: "POST", body })
       .then((response) => {
-        if (!response.ok || response.url.includes("rfq-error")) {
+        if (!response.ok) {
           sendingLock.current = false;
           setFailed(true);
         }
