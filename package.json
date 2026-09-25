@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/export-dist.mjs",
-    "start": "npx serve dist"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
