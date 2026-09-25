@@ -12,6 +12,7 @@ export function RfqForm() {
   const { items } = useQuote();
   const [fileName, setFileName] = useState("");
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
   const sendingLock = useRef(false);
   const [phoneCode, setPhoneCode] = useState("AE +971");
@@ -43,19 +44,23 @@ export function RfqForm() {
     if (sendingLock.current) return;
     const form = event.currentTarget;
     if (!form.reportValidity()) return;
+    const trap = form.querySelector("input[name='company_website']");
+    if (trap instanceof HTMLInputElement) trap.value = "";
     sendingLock.current = true;
     setFailed(false);
-    setSent(true);
+    setSending(true);
     const body = new FormData(form);
     void fetch("/api/rfq", { method: "POST", body })
-      .then((response) => {
-        if (!response.ok) {
-          sendingLock.current = false;
-          setFailed(true);
-        }
+      .then(async (response) => {
+        const data = await response.json().catch(() => null);
+        sendingLock.current = false;
+        setSending(false);
+        if (!response.ok || !data?.ok) setFailed(true);
+        else setSent(true);
       })
       .catch(() => {
         sendingLock.current = false;
+        setSending(false);
         setFailed(true);
       });
   }
@@ -86,8 +91,8 @@ export function RfqForm() {
       {/* Honeypot anti-spam */}
       <div className="sr-only" aria-hidden="true">
         <label>
-          Company website
-          <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+          Leave this blank
+          <input type="text" name="company_website" tabIndex={-1} autoComplete="off" defaultValue="" />
         </label>
       </div>
 
@@ -282,10 +287,11 @@ export function RfqForm() {
         <Button
           type="submit"
           size="lg"
+          disabled={sending}
           className="w-full gap-2 font-semibold tracking-wide"
         >
           <Send className="w-4 h-4" />
-          Request an RFQ
+          {sending ? "Sending" : "Request an RFQ"}
         </Button>
         <p className="text-[11px] text-steel font-mono flex items-center gap-1.5">
           <AlertCircle className="w-3.5 h-3.5 text-amber shrink-0" />
