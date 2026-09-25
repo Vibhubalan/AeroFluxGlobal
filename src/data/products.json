@@ -4,519 +4,145 @@
       "id": "aeroshell-w-15w-50",
       "name": "AeroShell Oil W 15W-50",
       "image": "/images/products/aeroshell-w-15w-50.webp",
-      "packs": [
-        "6x1 USQ",
-        "208.1 L"
-      ],
+      "packs": ["6x1 USQ", "208.1 L"],
       "description": "Engineered for all-season performance and advanced engine protection, AeroShell Oil W 15W-50 is a premium semi-synthetic multigrade oil formulated by blending high-quality mineral base stocks with over 50% synthetic hydrocarbon fluids. Eliminates seasonal oil changes while delivering rapid cold-weather startup flow and high-temperature film strength. Features ashless dispersant technology, non-metallic anti-rust additives, and the Lycoming LW 16702 anti-wear additive to protect critical camshafts and lifters.",
       "applications": "All-season use in aviation piston engines requiring anti-wear, anti-rust, and sludge prevention.",
-      "specifications": [
-        "SAE J1899 (supersedes MIL-L-22851)"
-      ]
+      "specifications": ["SAE J1899 (supersedes MIL-L-22851)"]
     },
     {
       "id": "aeroshell-sport-plus-4",
       "name": "AeroShell Oil Sport Plus 4",
       "image": "/images/products/aeroshell-sport-plus-4.webp",
-      "packs": [
-        "12x1 L"
-      ],
+      "packs": ["12x1 L"],
       "description": "Engineered in direct partnership with ROTAX, AeroShell Oil Sport Plus 4 is the first dedicated aviation engine oil specially developed for four-stroke light sport piston engines. Utilizing high-quality hydrocarbon base stocks enriched with synthetic technology, it accommodates lower cylinder head temperatures and low oil consumption while maintaining exceptional stability across all operating climates and fuel types.",
       "applications": "Four-stroke light sport piston engines (including ROTAX 912 and 914 series), automotive-derived engines (carbureted, fuel-injected, turbocharged) that cannot run on traditional ashless dispersant oils.",
-      "specifications": [
-        "N/A (No direct US Military Specification)",
-        "API SL",
-        "JASO MA",
-        "VW 502.00",
-        "Teledyne Continental MHS 24B",
-        "Rotax SI-912-016/SI-914-019",
-        "Russian Grade MS-20"
-      ]
+      "specifications": ["N/A (No direct US Military Specification)", "API SL", "JASO MA", "VW 502.00", "Teledyne Continental MHS 24B", "Rotax SI-912-016/SI-914-019", "Russian Grade MS-20"]
     },
     {
       "id": "aeroshell-oil-100",
       "name": "AeroShell Oil 100",
       "image": "/images/products/aeroshell-oil-100.webp",
-      "packs": [
-        "6x1 USQ",
-        "208.1 L"
-      ],
+      "packs": ["6x1 USQ", "208.1 L"],
       "description": "Blended from high viscosity index mineral base stocks, AeroShell Oil 100 is an ashless straight mineral oil designed for certified four-stroke aircraft reciprocating piston engines and radial engines calling for non-dispersant lubricants. Contains minimal additives beyond antioxidants and targeted pour-point depressants for low-temperature fluidity.",
       "applications": "Break-in period of new or recently overhauled aviation piston engines to allow proper ring seating (excluding Porsche).",
-      "specifications": [
-        "SAE J1966 Grade 50 (supersedes MIL-L-6082 Grade 100)",
-        "AIR 3560/D Grade SAE 50"
-      ]
+      "specifications": ["SAE J1966 Grade 50 (supersedes MIL-L-6082 Grade 100)", "AIR 3560/D Grade SAE 50"]
     },
     {
       "id": "aeroshell-w100-plus",
       "name": "AeroShell Oil W100 Plus",
       "image": "/images/products/aeroshell-w100-plus.webp",
-      "packs": [
-        "6x1 USQ"
-      ],
+      "packs": ["6x1 USQ"],
       "description": "Combining premium single-grade ashless dispersant performance with advanced protection, AeroShell Oil W100 Plus is an SAE Grade 50 piston engine oil designed for single-grade reliability with elite anti-wear and anti-corrosion defense. Incorporates the proven AeroShell W additive package, additional anti-corrosion chemistry, and the Lycoming LW 16702 anti-wear additive to protect camshafts and lifters during idle periods and reach TBO. Fully compatible with other approved aviation piston engine oils.",
       "applications": "Certified aviation piston engines requiring SAE Grade 50 protection.",
-      "specifications": [
-        "SAE J1899 Grade 50 (supersedes MIL-L-22851)"
-      ]
+      "specifications": ["SAE J1899 Grade 50 (supersedes MIL-L-22851)"]
     },
     {
       "id": "aeroshell-oil-w120",
       "name": "AeroShell Oil W120",
       "image": "/images/products/aeroshell-oil-w120.webp",
-      "packs": [
-        "208.1 L"
-      ],
+      "packs": ["208.1 L"],
       "description": "Delivering high-viscosity non-ash dispersant performance, AeroShell Oil W120 combines select high viscosity index mineral base stocks with non-metallic additives to ensure superior stability, dispersancy, and anti-foaming protection with zero metallic ash residues. Maintains engine cleanliness, keeps internal components sludge-free, reduces oil consumption, and protects critical parts against scuffing to help reach TBO.",
       "applications": "Heavy-duty, four-stroke certified reciprocating aircraft engines operating under hot conditions or high stress.",
-      "specifications": [
-        "SAE J1899 Grade SAE 60 (supersedes MIL-L-22851D)",
-        "AIR 3570 Grade SAE 60",
-        "OMD-370"
-      ]
+      "specifications": ["SAE J1899 Grade SAE 60 (supersedes MIL-L-22851D)", "AIR 3570 Grade SAE 60", "OMD-370"]
     },
     {
       "id": "aeroshell-oil-w100",
       "name": "AeroShell Oil W100",
       "image": "/images/products/aeroshell-oil-w100.webp",
-      "packs": [
-        "6x1 USQ",
-        "208.1 L"
-      ],
+      "packs": ["6x1 USQ", "208.1 L"],
       "description": "Pioneering non-ash dispersant technology for aviation piston engines, AeroShell Oil W100 combines high viscosity index base stocks with non-metallic additives to ensure exceptional stability, dispersancy, and anti-foaming protection. Eliminates metallic ash residues to prevent combustion chamber deposits and spark plug fouling, keeping engines sludge-free, reducing oil consumption, and protecting against scuffing to reach TBO.",
       "applications": "Certified four-stroke reciprocating piston engines (including fuel-injected and turbocharged models).",
-      "specifications": [
-        "SAE J1899 Grade SAE 50 (supersedes MIL-L-22851)",
-        "AIR 3570",
-        "Russian Grade MS-20",
-        "OMD-250"
-      ]
+      "specifications": ["SAE J1899 Grade SAE 50 (supersedes MIL-L-22851)", "AIR 3570", "Russian Grade MS-20", "OMD-250"]
     }
   ],
   "turbine-engine-oil": [
-    {
-      "id": "aeroshell-turbine-500",
-      "name": "AeroShell Turbine Oil 500"
-    },
-    {
-      "id": "aeroshell-turbine-560",
-      "name": "AeroShell Turbine Oil 560"
-    },
-    {
-      "id": "mobil-jet-ii",
-      "name": "Mobil Jet Oil II"
-    },
-    {
-      "id": "mobil-jet-254",
-      "name": "Mobil Jet Oil 254"
-    },
+    { "id": "aeroshell-turbine-500", "name": "AeroShell Turbine Oil 500" },
+    { "id": "aeroshell-turbine-560", "name": "AeroShell Turbine Oil 560" },
+    { "id": "mobil-jet-ii", "name": "Mobil Jet Oil II" },
+    { "id": "mobil-jet-254", "name": "Mobil Jet Oil 254" },
     {
       "id": "eastman-2380",
       "name": "Eastman Turbo Oil 2380",
       "featured": true,
       "summary": "High thermal stability for modern turbine engines.",
-      "packs": [
-        "1 USQ",
-        "5 USG"
-      ],
+      "packs": ["1 USQ", "5 USG"],
       "description": "Eastman Turbo Oil 2380 is a 5 cSt synthetic turbine oil used where high thermal stability and reliable oil consumption are required.",
       "applications": "Commercial and military turbine engines approved for this grade.",
-      "specifications": [
-        "SAE AS5780",
-        "MIL-PRF-23699"
-      ]
+      "specifications": ["SAE AS5780", "MIL-PRF-23699"]
     },
-    {
-      "id": "eastman-2197",
-      "name": "Eastman Turbo Oil 2197"
-    }
+    { "id": "eastman-2197", "name": "Eastman Turbo Oil 2197" }
   ],
   "aviation-greases": [
-    {
-      "id": "aeroshell-grease-6",
-      "name": "AeroShell Grease 6",
-      "image": "/images/products/aeroshell-grease-6.webp",
-      "packs": [
-        "4x3 Kg"
-      ],
-      "description": "Formulated for reliable, general-purpose airframe maintenance, AeroShell Grease 6 features high-quality mineral oil thickened with Microgel® to deliver outstanding protection across an operating temperature range of -40°C to +121°C. Oxidation- and corrosion-inhibited with superior water resistance and low-noise characteristics.",
-      "applications": "Anti-friction bearings, gearboxes, and plain bearings.",
-      "specifications": [
-        "MIL-PRF-24139A",
-        "NATO G-382",
-        "DEF STAN 91-12"
-      ]
-    },
-    {
-      "id": "aeroshell-grease-7",
-      "name": "AeroShell Grease 7",
-      "image": "/images/products/aeroshell-grease-7.webp",
-      "packs": [
-        "4x3 Kg",
-        "30x300 g"
-      ],
-      "description": "An advanced, multi-purpose airframe lubricant combining a synthetic ester base oil with Microgel® thickener to deliver exceptional load-carrying capacity and high water resistance. Operating across an ultra-wide temperature range of -73°C to +149°C, this corrosion-inhibited clay-based grease ensures maximum mechanical reliability when paired with compatible seal materials.",
-      "applications": "Airframes, highly loaded gears, instruments, and actuator screw mechanisms for both turbine and piston-engine aircraft.",
-      "specifications": [
-        "MIL-PRF-23827C Type II"
-      ]
-    },
-    {
-      "id": "aeroshell-grease-22",
-      "name": "AeroShell Grease 22",
-      "image": "/images/products/aeroshell-grease-22.webp",
-      "packs": [
-        "4x3 Kg",
-        "30x0.4 Kg",
-        "17 Kg Pail"
-      ],
-      "description": "AeroShell Grease 22 combines synthetic hydrocarbon oil with Microgel® thickener to deliver exceptional anti-wear, oxidation, and corrosion resistance. Built for high bearing loads, high speeds, and maximum water washout resistance across an extensive temperature range of -65°C to +204°C.",
-      "applications": "Aircraft wheel bearings, engine accessories, control systems, actuators, landing gear, and helicopter rotor bearings.",
-      "specifications": [
-        "MIL-PRF-81322F",
-        "DOD-G-24508A",
-        "NATO G-395"
-      ]
-    },
-    {
-      "id": "aeroshell-grease-14",
-      "name": "AeroShell Grease 14",
-      "image": "/images/products/aeroshell-grease-14.webp",
-      "packs": [
-        "4x3 Kg"
-      ],
-      "description": "Engineered specifically for demanding rotary-wing applications, AeroShell Grease 14 is the industry-leading helicopter multi-purpose grease, blending a calcium soap-thickened mineral oil base with advanced oxidation and corrosion inhibitors. Operating reliably from -54°C to +93°C, its superior anti-fret and anti-moisture properties extend component lifespans in tough operating conditions subjected to heavy vibration.",
-      "applications": "Main and tail rotor bearings, splines, and critical airframe components.",
-      "specifications": [
-        "MIL-G-25537C",
-        "DEF STAN 91-51",
-        "NATO G-366"
-      ]
-    },
-    {
-      "id": "mobil-grease-28",
-      "name": "Mobil Grease 28",
-      "image": "/images/products/mobil-grease-28.webp",
-      "packs": [
-        "4x2 Kg"
-      ],
-      "description": "A wide-temperature synthetic grease combining a polyalphaolefin (PAO) base fluid with a non-soap organo-clay thickener (NLGI No. 1 to No. 2 consistency). Features low low-temperature torque, an exceptionally high dropping point (~260°C to 300°C), high water wash-out resistance, and robust protection against friction and fretting.",
-      "applications": "Heavy-load aircraft wheel bearings, control surface actuators, landing gear components, and demanding shipboard auxiliary or industrial machinery.",
-      "specifications": [
-        "MIL-PRF-81322",
-        "DOD-G-24508A",
-        "Symbol WTR",
-        "NATO G-395 (Supersedes MIL-G-81322, MIL-G-7711A, MIL-G-3545B, MIL-G-25760A)"
-      ]
-    },
-    {
-      "id": "mobil-shc-100",
-      "name": "Mobil Grease SHC 100",
-      "image": "/images/products/mobil-shc-100.webp",
-      "packs": [
-        "4x2 Kg"
-      ],
-      "description": "A synthetic grease combining a wax-free polyalphaolefin (PAO) base fluid with a high-quality lithium complex soap thickener. Formulated to ISO VG 100 viscosity and NLGI Grade 2 consistency, it provides low starting/running torque with cold-temperature pumping resistance typical of mineral-oil Grade 0 lubricants. Operates reliably across -54°C to 177°C (-65°F to 350°F) while delivering a high dropping point, water wash-out resistance, and protection against heavy wear, rust, and corrosion.",
-      "applications": "High-speed, heavy-load aircraft wheel bearings, landing gear assemblies, slides, joints, and aerospace chassis applications. Holds approvals from Meggitt, Goodrich, Honeywell, Messier-Bugatti, and Parker-Cleveland.",
-      "specifications": [
-        "N/A (No direct US Military Specification)",
-        "NATO G-354"
-      ]
-    },
-    {
-      "id": "aeroshell-grease-33",
-      "name": "AeroShell Grease 33",
-      "image": "/api/media/products/aeroshell-grease-33.webp",
-      "packs": [
-        "4x3 Kg",
-        "30x400 g"
-      ],
-      "description": "Designed to streamline fleet maintenance and prevent product mis-application, AeroShell Grease 33 is a synthetic universal airframe grease formulated with a lithium complex thickener, oxidation and corrosion inhibitors, and high load-carrying additives across an operating temperature range of -73°C to +121°C. Consolidates inventories by replacing multiple specialized greases, significantly lowering maintenance labor costs.",
-      "applications": "Multi-purpose use across major airframe applications.",
-      "specifications": [
-        "MIL-PRF-23827C Type I",
-        "Boeing BMS 3-33B",
-        "Airbus AIMS 09-06-002",
-        "NATO G-354"
-      ]
-    },
-    {
-      "id": "aeroshell-grease-5",
-      "name": "AeroShell Grease 5"
-    },
-    {
-      "id": "nyco-grease-gn-22",
-      "name": "Nycogrease GN 22",
-      "image": "/api/media/products/nyco-grease-gn-22.webp",
-      "packs": [
-        "24x1 Kg"
-      ],
-      "description": "An NLGI 2 synthetic aircraft grease formulated with synthetic hydrocarbon base oil (7 cSt at 100°C) and an inorganic clay thickener. Fortified with anti-wear, extreme pressure, and anti-corrosion inhibitors, it operates reliably across -65°C to +177°C.",
-      "applications": "General airframe mechanisms (doors, flaps, slats) as well as heavy-load landing gear components and wheel bearings for civil and military aircraft.",
-      "specifications": [
-        "MIL-PRF-81322G",
-        "DEF STAN 91-52 Issue 1 (JSD XG-293)",
-        "DCSEA 395/B (formerly AIR 4222)",
-        "NATO G-395"
-      ]
-    },
-    {
-      "id": "nyco-grease-gn-69",
-      "name": "Nycogrease GN 69",
-      "image": "/api/media/products/nyco-grease-gn-69.webp",
-      "packs": [
-        "24x1 Kg"
-      ],
-      "description": "A heat-stable silicone electrical insulating grease formulated from silicone oil thickened with a non-melting gelling agent. Operates across a temperature range of -54°C to +204°C to provide dielectric protection and seal out moisture.",
-      "applications": "Filling compound in high-tension electrical equipment and ignition systems; protective coating on electrical contacts and electronic circuits.",
-      "specifications": [
-        "SAE AS 8660",
-        "DEF STAN 68-69",
-        "DCSEA 636/A",
-        "NATO S-736"
-      ]
-    },
-    {
-      "id": "nyco-grease-gn-148",
-      "name": "Nycogrease GN 148",
-      "image": "/api/media/products/nyco-grease-gn-148.webp",
-      "packs": [
-        "24x1 Kg"
-      ],
-      "description": "A multipurpose NLGI 2 synthetic aircraft grease formulated from diester and synthetic hydrocarbon base oils thickened with a lithium complex soap. Appearing as a blue-to-green paste, it operates across -73°C to +135°C, providing high resistance to saltwater washout, strong load-carrying capacity, low starting torque, and vibration protection.",
-      "applications": "Critical airframe components, doors, slats, flaps, horizontal stabilizers (THS), landing gear assemblies, and high-speed bearings for civil/military aircraft and helicopters.",
-      "specifications": [
-        "MIL-PRF-23827 C Type I",
-        "SAE AMS 3052",
-        "Airbus AIMS 09-06-002",
-        "Boeing BMS 3-33 (C/B)",
-        "NATO G-354 (Replaces MIL-PRF-23827 Types I/II, MIL-G-25537, DEF STAN 91-53, DEF STAN 91-12)"
-      ]
-    },
-    {
-      "id": "nyco-grease-gn-3058",
-      "name": "Nycogrease GN 3058",
-      "image": "/api/media/products/nyco-grease-gn-3058.webp",
-      "packs": [
-        "24x1 Kg"
-      ],
-      "description": "A high-performance white synthetic grease thickened with a lithium complex soap, operating across -54°C to +175°C (-65°F to +347°F). Offers high load-carrying capacity, anti-wear protection, and strong resistance to water washout, salt water, and corrosive de-icing fluids.",
-      "applications": "Landing gear, wheel bearings, heavily loaded airframe systems, and aircraft propellers (including Hartzell requirements).",
-      "specifications": [
-        "MIL-PRF-32014A",
-        "SAE-AMS-3058",
-        "Airbus AIMS 09-06-003 (CML 03GCC1)",
-        "Boeing D50255"
-      ]
-    },
-    {
-      "id": "aeroshell-grease-58",
-      "name": "AeroShell Grease 58",
-      "image": "/api/media/products/aeroshell-grease-58.webp",
-      "packs": [
-        "4x3 Kg"
-      ],
-      "description": "Engineered for extreme operating conditions and high-load environments, AeroShell Grease 58 is an advanced synthetic wheel bearing and general-purpose airframe lubricant formulated with a lithium complex soap thickener. Delivering exceptional mechanical stability, oxidation resistance, and wear protection, it operates reliably across a wide temperature range of -54°C to +175°C while offering high resistance to water washout and corrosive fluids.",
-      "applications": "Aircraft wheel bearings, actuators, landing gear, and control systems.",
-      "specifications": [
-        "Outperforms MIL-PRF-81322 requirements",
-        "SAE AMS 3058",
-        "Airbus AIMS 09-06-003"
-      ]
-    }
+    { "id": "aeroshell-grease-7", "name": "AeroShell Grease 7" },
+    { "id": "aeroshell-grease-22", "name": "AeroShell Grease 22" },
+    { "id": "aeroshell-grease-33", "name": "AeroShell Grease 33" },
+    { "id": "mobil-shc-100", "name": "Mobil Aviation Grease SHC 100" },
+    { "id": "aeroshell-grease-5", "name": "AeroShell Grease 5" },
+    { "id": "aeroshell-grease-6", "name": "AeroShell Grease 6" }
   ],
   "hydraulic-fluids": [
-    {
-      "id": "aeroshell-fluid-41",
-      "name": "AeroShell Fluid 41"
-    },
-    {
-      "id": "aeroshell-fluid-31",
-      "name": "AeroShell Fluid 31"
-    },
-    {
-      "id": "skydrol-ld4",
-      "name": "Skydrol LD-4"
-    },
-    {
-      "id": "skydrol-500b4",
-      "name": "Skydrol 500B-4"
-    },
-    {
-      "id": "aeroshell-fluid-4",
-      "name": "AeroShell Fluid 4"
-    },
-    {
-      "id": "hyjet-v",
-      "name": "Exxon HyJet V"
-    }
+    { "id": "aeroshell-fluid-41", "name": "AeroShell Fluid 41" },
+    { "id": "aeroshell-fluid-31", "name": "AeroShell Fluid 31" },
+    { "id": "skydrol-ld4", "name": "Skydrol LD-4" },
+    { "id": "skydrol-500b4", "name": "Skydrol 500B-4" },
+    { "id": "aeroshell-fluid-4", "name": "AeroShell Fluid 4" },
+    { "id": "hyjet-v", "name": "Exxon HyJet V" }
   ],
   "speciality-fluids": [
-    {
-      "id": "aeroshell-fluid-12",
-      "name": "AeroShell Fluid 12"
-    },
-    {
-      "id": "aeroshell-compound-07",
-      "name": "AeroShell Compound 07"
-    },
+    { "id": "aeroshell-fluid-12", "name": "AeroShell Fluid 12" },
+    { "id": "aeroshell-compound-07", "name": "AeroShell Compound 07" },
     {
       "id": "aeroshell-fluid-3",
       "name": "AeroShell Fluid 3",
       "featured": true,
       "summary": "Balanced thermal stability for reliable turbine performance.",
-      "packs": [
-        "1 USQ",
-        "5 USG"
-      ],
+      "packs": ["1 USQ", "5 USG"],
       "description": "AeroShell Fluid 3 is a general-purpose mineral lubricating oil for aircraft instruments and general airframe use.",
       "applications": "Instruments, general airframe lubrication, and other approved light-duty uses.",
-      "specifications": [
-        "MIL-PRF-7870"
-      ]
+      "specifications": ["MIL-PRF-7870"]
     },
-    {
-      "id": "skydrol-pe5",
-      "name": "Eastman Skydrol PE-5"
-    },
-    {
-      "id": "aeroshell-calibrating-2",
-      "name": "AeroShell Calibrating Fluid 2"
-    },
-    {
-      "id": "aeroshell-fluid-5",
-      "name": "AeroShell Fluid 5"
-    }
+    { "id": "skydrol-pe5", "name": "Eastman Skydrol PE-5" },
+    { "id": "aeroshell-calibrating-2", "name": "AeroShell Calibrating Fluid 2" },
+    { "id": "aeroshell-fluid-5", "name": "AeroShell Fluid 5" }
   ],
   "aviation-tyres": [
-    {
-      "id": "michelin-air",
-      "name": "Michelin Air"
-    },
-    {
-      "id": "dunlop-aero",
-      "name": "Dunlop Aero"
-    },
-    {
-      "id": "goodyear-flight-custom",
-      "name": "Goodyear Flight Custom"
-    },
-    {
-      "id": "michelin-aviator",
-      "name": "Michelin Aviator"
-    },
-    {
-      "id": "dunlop-dr26",
-      "name": "Dunlop DR26"
-    },
-    {
-      "id": "goodyear-flight-leader",
-      "name": "Goodyear Flight Leader"
-    }
+    { "id": "michelin-air", "name": "Michelin Air" },
+    { "id": "dunlop-aero", "name": "Dunlop Aero" },
+    { "id": "goodyear-flight-custom", "name": "Goodyear Flight Custom" },
+    { "id": "michelin-aviator", "name": "Michelin Aviator" },
+    { "id": "dunlop-dr26", "name": "Dunlop DR26" },
+    { "id": "goodyear-flight-leader", "name": "Goodyear Flight Leader" }
   ],
   "aerospace-tapes-and-protection-films": [
-    {
-      "id": "nitto-as-1946",
-      "name": "Nitto AS-1946"
-    },
-    {
-      "id": "3m-tape-425",
-      "name": "3M Aerospace Tape 425"
-    },
-    {
-      "id": "nitto-5025",
-      "name": "Nitto 5025"
-    },
-    {
-      "id": "3m-protective-tape",
-      "name": "3M Protective Tape"
-    },
-    {
-      "id": "nitto-surface-film",
-      "name": "Nitto Surface Protection Film"
-    },
-    {
-      "id": "3m-venture-tape",
-      "name": "3M Venture Tape"
-    }
+    { "id": "nitto-as-1946", "name": "Nitto AS-1946" },
+    { "id": "3m-tape-425", "name": "3M Aerospace Tape 425" },
+    { "id": "nitto-5025", "name": "Nitto 5025" },
+    { "id": "3m-protective-tape", "name": "3M Protective Tape" },
+    { "id": "nitto-surface-film", "name": "Nitto Surface Protection Film" },
+    { "id": "3m-venture-tape", "name": "3M Venture Tape" }
   ],
   "adhesives-and-sealants": [
-    {
-      "id": "loctite-242",
-      "name": "Loctite 242"
-    },
-    {
-      "id": "loctite-243",
-      "name": "Loctite 243"
-    },
-    {
-      "id": "molykote-p37",
-      "name": "Molykote P-37"
-    },
-    {
-      "id": "ppg-pr-1440",
-      "name": "PPG PR-1440"
-    },
-    {
-      "id": "loctite-222",
-      "name": "Loctite 222"
-    },
-    {
-      "id": "3m-ac-350",
-      "name": "3M AC-350"
-    }
+    { "id": "loctite-242", "name": "Loctite 242" },
+    { "id": "loctite-243", "name": "Loctite 243" },
+    { "id": "molykote-p37", "name": "Molykote P-37" },
+    { "id": "ppg-pr-1440", "name": "PPG PR-1440" },
+    { "id": "loctite-222", "name": "Loctite 222" },
+    { "id": "3m-ac-350", "name": "3M AC-350" }
   ],
   "cleaners-and-degreasers": [
-    {
-      "id": "ardrox-9pr5",
-      "name": "Ardrox 9PR5"
-    },
-    {
-      "id": "zok-27",
-      "name": "ZOK 27"
-    },
-    {
-      "id": "lps-1",
-      "name": "LPS 1"
-    },
-    {
-      "id": "lps-2",
-      "name": "LPS 2"
-    },
-    {
-      "id": "lps-3",
-      "name": "LPS 3"
-    },
-    {
-      "id": "ardrox-3961",
-      "name": "Ardrox 3961"
-    }
+    { "id": "ardrox-9pr5", "name": "Ardrox 9PR5" },
+    { "id": "zok-27", "name": "ZOK 27" },
+    { "id": "lps-1", "name": "LPS 1" },
+    { "id": "lps-2", "name": "LPS 2" },
+    { "id": "lps-3", "name": "LPS 3" },
+    { "id": "ardrox-3961", "name": "Ardrox 3961" }
   ],
   "aircraft-spares": [
-    {
-      "id": "engine-mounts",
-      "name": "Engine Mounts"
-    },
-    {
-      "id": "filter-kit",
-      "name": "Filter Kit"
-    },
-    {
-      "id": "seal-kit",
-      "name": "Seal Kit"
-    },
-    {
-      "id": "ignition-leads",
-      "name": "Ignition Leads"
-    },
-    {
-      "id": "bearing-set",
-      "name": "Bearing Set"
-    },
-    {
-      "id": "hose-assembly",
-      "name": "Hose Assembly"
-    }
+    { "id": "engine-mounts", "name": "Engine Mounts" },
+    { "id": "filter-kit", "name": "Filter Kit" },
+    { "id": "seal-kit", "name": "Seal Kit" },
+    { "id": "ignition-leads", "name": "Ignition Leads" },
+    { "id": "bearing-set", "name": "Bearing Set" },
+    { "id": "hose-assembly", "name": "Hose Assembly" }
   ]
 }
