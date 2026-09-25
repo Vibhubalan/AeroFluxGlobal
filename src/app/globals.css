@@ -43,6 +43,9 @@ html {
   background: rgba(181, 67, 50, 0.72);
 }
 
+@media (max-width: 767px) {
+  body { padding-bottom: 4.75rem; }
+}
 body {
   color: var(--color-ink);
   font-size: 1rem;
@@ -349,8 +352,11 @@ body {
 }
 
 .brand-lockup {
-  width: min(52rem, 88vw);
+  width: min(52rem, 78vw);
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .brand-lockup { width: min(52rem, 88vw); }
 }
 .brand-lockup .brand-word,
 .brand-lockup .brand-global {
@@ -366,8 +372,11 @@ body {
 .brand-run {
   position: relative;
   display: block;
-  height: calc(68 / 860 * min(52rem, 88vw));
+  height: calc(68 / 860 * min(52rem, 78vw));
   container-type: inline-size;
+}
+@media (min-width: 768px) {
+  .brand-run { height: calc(68 / 860 * min(52rem, 88vw)); }
 }
 .brand-rule {
   position: absolute;

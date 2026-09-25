@@ -17,9 +17,9 @@ export function Header() {
 
   return (
     <div className="sticky top-0 z-50 glass-bar">
-      <header className="flex items-center justify-between page-x h-28">
+      <header className="flex items-center justify-between page-x h-16 md:h-28">
         <Link href="/" aria-label={site.name} className="shrink-0">
-          <img src="/images/logo.png" alt={site.name} className="h-16 w-auto brightness-110" />
+          <img src="/images/logo.png" alt={site.name} className="h-9 w-auto brightness-110 md:h-16" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-base" aria-label="Main navigation">

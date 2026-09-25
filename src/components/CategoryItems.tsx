@@ -46,7 +46,7 @@ export function CategoryItems({
     <section className="page-x py-14 lg:py-16">
       <div className="mx-auto max-w-2xl text-center">
         <h2
-          className="font-display text-red"
+          className="font-display"
           style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", letterSpacing: "-0.03em" }}
         >
           {title}
@@ -73,20 +73,29 @@ export function CategoryItems({
       {shown.length === 0 ? (
         <p className="mt-10 text-center text-sm text-steel">No products match.</p>
       ) : (
-        <ul className="mt-12 grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
+        <ul className="mx-auto mt-12 grid max-w-6xl grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {shown.map((item) => (
-            <li key={item.id} className="text-center">
-              <Link href={`/${category}/${item.id}`} className="block hover:text-red">
-              <div className="mx-auto flex h-40 items-center justify-center">
-                <img
-                  src={item.image || image}
-                  alt=""
-                  width={160}
-                  height={200}
-                  className="max-h-40 w-auto object-contain"
-                />
-              </div>
-              <p className="mt-3 text-sm text-ink leading-snug">{item.name}</p>
+            <li key={item.id}>
+              <Link
+                href={`/${category}/${item.id}`}
+                className="group block overflow-hidden border border-ink/10 bg-white/45 transition-colors hover:border-ink/25"
+                style={{ borderRadius: "var(--radius)" }}
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-[#e7dcc8]">
+                  <img
+                    src={item.image || `/images/products/${item.id}.webp`}
+                    alt=""
+                    width={640}
+                    height={480}
+                    onError={(event) => {
+                      event.currentTarget.src = image;
+                    }}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+                  />
+                </div>
+                <p className="px-3.5 py-3.5 text-sm font-semibold leading-snug text-ink group-hover:text-logo">
+                  {item.name}
+                </p>
               </Link>
             </li>
           ))}
