@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 export type CatalogItem = { id: string; name: string; image?: string };
 
@@ -18,29 +18,12 @@ export function CategoryItems({
   items: CatalogItem[];
   category: string;
 }) {
-  const [live, setLive] = useState<CatalogItem[] | null>(null);
-  const catalog = live ?? items;
   const [query, setQuery] = useState("");
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch(`/api/items?c=${encodeURIComponent(category)}`)
-      .then((response) => (response.ok ? response.json() : null))
-      .then((data) => {
-        if (!cancelled && Array.isArray(data?.items) && data.items.length > 0) {
-          setLive(data.items);
-        }
-      })
-      .catch(() => undefined);
-    return () => {
-      cancelled = true;
-    };
-  }, [category]);
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return catalog;
-    return catalog.filter((item) => item.name.toLowerCase().includes(q));
-  }, [catalog, query]);
+    if (!q) return items;
+    return items.filter((item) => item.name.toLowerCase().includes(q));
+  }, [items, query]);
 
   return (
     <section className="page-x py-14 lg:py-16">

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { CategoryItems } from "@/components/CategoryItems";
 import { categories, products } from "@/lib/content";
 import { productImage } from "@/lib/images";
-import { dbQuery } from "@/lib/server/db";
+import { dbQuery, publicItem, type CatalogRow } from "@/lib/server/db";
 
 export const dynamic = "force-dynamic";
 
@@ -43,6 +43,13 @@ export default async function CategoryPage({
   const { slug } = await params;
   const category = await categoryBySlug(slug);
   if (!category) notFound();
+  let items = products[category.slug as keyof typeof products] ?? [];
+  try {
+    const result = await dbQuery<CatalogRow>("SELECT * FROM catalog_items WHERE category_slug = $1 ORDER BY name", [slug]);
+    if (result.rows.length > 0) items = result.rows.map(publicItem);
+  } catch {
+    items = products[category.slug as keyof typeof products] ?? [];
+  }
 
   return (
     <div className="mesh min-h-screen">
@@ -51,7 +58,7 @@ export default async function CategoryPage({
         summary={category.summary}
         image={productImage(category.slug)}
         category={category.slug}
-        items={products[category.slug as keyof typeof products] ?? []}
+        items={items}
       />
     </div>
   );
