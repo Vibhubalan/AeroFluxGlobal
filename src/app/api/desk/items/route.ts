@@ -42,7 +42,7 @@ export async function POST(request: Request) {
   const form = await request.formData();
   const category = String(form.get("category") ?? "");
   const name = String(form.get("name") ?? "").trim();
-  const itemId = slug(String(form.get("item_id") ?? name));
+  const itemId = slug(String(form.get("item_id") ?? "").trim() || name);
   const packs = lines(form.get("packs"));
   if (!category || !name || packs.length === 0) {
     return NextResponse.json({ error: "Category, name, and one pack size are required." }, { status: 400 });

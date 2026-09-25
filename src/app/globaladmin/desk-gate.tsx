@@ -179,7 +179,7 @@ export function DeskGate() {
     const form = new FormData(event.currentTarget as HTMLFormElement);
     form.set("category", editing.category);
     form.set("name", editing.name.trim());
-    form.set("item_id", editing.id);
+    form.set("item_id", editing.id || editing.name.trim());
     form.set("packs", editing.packs.map((pack) => pack.trim()).filter(Boolean).join("\n"));
     form.set("specifications", editing.specifications.map((line) => line.trim()).filter(Boolean).join("\n"));
     form.set("description", editing.description);
