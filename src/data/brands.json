@@ -1,0 +1,21 @@
+[
+  { "name": "Eastman", "src": "/brands/brand-01.webp", "width": 360, "height": 96 },
+  { "name": "AeroShell", "src": "/brands/brand-02.webp", "width": 360, "height": 96 },
+  { "name": "ExxonMobil", "src": "/brands/brand-03.webp", "width": 360, "height": 96 },
+  { "name": "LPS", "src": "/brands/brand-04.webp", "width": 121, "height": 96 },
+  { "name": "NYCO", "src": "/brands/brand-05.webp", "width": 295, "height": 96 },
+  { "name": "ZOK", "src": "/brands/brand-06.webp", "width": 222, "height": 96 },
+  { "name": "PPG", "src": "/brands/brand-07.webp", "width": 127, "height": 96 },
+  { "name": "3M", "src": "/brands/brand-08.webp", "width": 170, "height": 96 },
+  { "name": "Nitto", "src": "/brands/brand-09.webp", "width": 399, "height": 96 },
+  { "name": "Molykote", "src": "/brands/brand-10.webp", "width": 309, "height": 96 },
+  { "name": "Loctite", "src": "/brands/brand-11.webp", "width": 420, "height": 91 },
+  { "name": "Michelin", "src": "/brands/brand-12.webp", "width": 287, "height": 96 },
+  { "name": "Dunlop", "src": "/brands/brand-13.webp", "width": 354, "height": 96 },
+  { "name": "Goodyear", "src": "/brands/brand-14.webp", "width": 420, "height": 85 },
+  { "name": "Momentive", "src": "/brands/brand-15.webp", "width": 420, "height": 60 },
+  { "name": "AkzoNobel", "src": "/brands/brand-16.webp", "width": 420, "height": 80 },
+  { "name": "Ardrox", "src": "/brands/brand-17.webp", "width": 397, "height": 96 },
+  { "name": "Permatex", "src": "/brands/brand-18.webp", "width": 346, "height": 96 },
+  { "name": "Magnaflux", "src": "/brands/brand-19.webp", "width": 420, "height": 85 }
+]

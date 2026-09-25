@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /desk-a7k9/
+Disallow: /globaladmin/
+
+Sitemap: https://aerofluxglobal.com/sitemap.xml

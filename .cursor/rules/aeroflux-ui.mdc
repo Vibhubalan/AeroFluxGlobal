@@ -1,0 +1,187 @@
+---
+description: AeroFlux visual design rules
+alwaysApply: true
+---
+
+# AeroFlux UI Rules
+
+Create a premium aviation/aerospace B2B website.
+
+Design principles:
+- Minimal
+- Clean
+- Editorial
+- Precise
+- Premium
+- Professional
+- Restrained
+
+The website must NOT look like a generic SaaS template.
+
+## Most important rule
+
+REMOVE before ADDING.
+
+If an element does not improve:
+- hierarchy
+- usability
+- clarity
+- navigation
+- trust
+
+remove it instead of adding another component.
+
+## Avoid
+
+- excessive cards
+- excessive rounded containers
+- excessive pills
+- gradients
+- glassmorphism
+- heavy shadows
+- unnecessary badges
+- unnecessary icons
+- excessive text
+- decorative elements
+- excessive animations
+- complicated layouts
+
+## Typography
+
+Use strong hierarchy.
+
+Large typography only for:
+- hero
+- major section headings
+
+Keep supporting text short.
+
+Never add marketing copy just to fill space.
+
+Prefer:
+
+"Certified aviation fluids and MRO products."
+
+over long marketing paragraphs.
+
+## Layout
+
+Prioritize:
+
+1. Alignment
+2. Spacing
+3. Typography
+4. Image composition
+5. Content hierarchy
+6. Interaction
+7. Decoration
+
+Use a consistent spacing system.
+
+Do not use arbitrary margins to fix layout problems.
+
+## Cards
+
+Do not turn every piece of content into a card.
+
+Prefer:
+- whitespace
+- typography
+- dividers
+- image composition
+
+over:
+- borders
+- shadows
+- containers
+
+Default border radius: 12–16px.
+
+## Images
+
+Use consistent aspect ratios.
+
+Use:
+object-fit: cover
+
+Images must not randomly determine card heights.
+
+Avoid awkward aircraft/product cropping.
+
+## Color
+
+Primary:
+- charcoal
+- warm off-white
+- near-black
+
+Accent:
+- aviation red
+
+Red should primarily be used for:
+- CTA
+- active state
+- small labels
+- subtle accents
+
+Do not use large red backgrounds unnecessarily.
+
+## Animation
+
+Keep animation subtle.
+
+Use:
+- opacity
+- translate
+- small image scale
+- border transitions
+
+200–400ms.
+
+No bouncing, spinning, excessive parallax, or distracting effects.
+
+## Responsive
+
+Explicitly design:
+- desktop
+- tablet
+- mobile
+
+Do not simply shrink desktop layouts.
+
+Check:
+- 1440px
+- 1920px
+- 768px
+- 390px
+
+No horizontal overflow.
+
+## AeroFlux identity
+
+The site represents an aviation sourcing and MRO company.
+
+The visual language should communicate:
+
+aviation
+precision
+reliability
+international logistics
+industrial quality
+
+It should feel like an established B2B aviation company.
+
+## Implementation
+
+Before changing a page:
+
+1. Inspect the existing components.
+2. Understand the current layout.
+3. Identify unnecessary visual elements.
+4. Simplify the hierarchy.
+5. Reuse existing components where possible.
+6. Implement the smallest number of changes necessary.
+7. Verify desktop and mobile.
+8. Check for console errors.
+
+Do not add complexity merely to make the website look modern.

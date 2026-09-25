@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "piston-engine-oil",
+    "title": "Piston Engine Oils",
+    "shortTitle": "Piston Engine Oils",
+    "tagline": "Engine oils for piston-powered aircraft.",
+    "summary": "Multiple pack sizes, dependable year-round availability, and expert guidance to select the right product for local operating conditions.",
+    "paragraphs": [
+      "AeroFlux Global supplies an extensive inventory of aviation piston engine oils suitable for commercial flight training academies, private operators, and general aviation fleet maintenance.",
+      "Our supply encompasses straight mineral break-in oils (SAE J1966 / MIL-L-6082E) and ashless dispersant (AD) single-grade and multi-grade formulas (SAE J1899 / MIL-L-22851D) with Lycoming anti-wear chemistry."
+    ],
+    "brands": ["AeroShell", "ExxonMobil"],
+    "groups": [
+      {
+        "title": "Mineral Straight Break-in Oils",
+        "body": "Pure mineral oils formulated for new or newly overhauled piston engines during initial break-in periods."
+      },
+      {
+        "title": "Ashless Dispersant (AD) Single Grades",
+        "body": "W80, W100, and W120 oils formulated to disperse carbon, prevent sludge formation, and maintain internal engine cleanliness."
+      },
+      {
+        "title": "Multi-Grade All-Weather Formulations",
+        "body": "Advanced 15W-50 semi-synthetic formulations delivering cold-weather starting protection and high-temp shear stability."
+      },
+      {
+        "title": "Anti-Wear & Corrosion Additive Chemistry",
+        "body": "Pre-formulated with anti-wear and anti-corrosion additives complying with FAA and Lycoming Service Bulletins."
+      }
+    ]
+  },
+  {
+    "slug": "turbine-engine-oil",
+    "title": "Turbine Engine Oils",
+    "shortTitle": "Turbine Engine Oils",
+    "tagline": "High-performance lubrication for turbine engines.",
+    "summary": "For turbine engine oils, investing in proven, high-quality products rather than short-term alternatives can support cleaner engines, more consistent oil consumption and long-term operating efficiency.",
+    "paragraphs": [
+      "We stock and distribute aviation turbine engine lubricants engineered to withstand the extreme thermal, oxidative, and mechanical rigors of modern commercial and military gas turbines.",
+      "All products comply with stringent international standards including SAE AS5780, MIL-PRF-23699, and DEF STAN 91-101, ensuring full OEM approvals from CFM International, GE, Rolls-Royce, Pratt & Whitney, and Safran."
+    ],
+    "brands": ["Eastman", "AeroShell", "ExxonMobil", "NYCO"],
+    "groups": [
+      {
+        "title": "Standard Performance Synthetic Oils (STD)",
+        "body": "5 cSt polyol ester oils qualified to MIL-PRF-23699 Class STD, including Eastman Turbo Oil 2380 and AeroShell Turbine Oil 500."
+      },
+      {
+        "title": "High Thermal Stability (HTS) Oils",
+        "body": "Engineered for high-temperature commercial turbofans qualified to AS5780 HTS and MIL-PRF-23699 Class HTS (Mobil Jet Oil 254, Eastman 2197)."
+      },
+      {
+        "title": "High Capability (HC) & Ultra Oils",
+        "body": "Next-generation turbine lubricants providing extreme oxidation resistance, reduced coking, and extended seal longevity."
+      },
+      {
+        "title": "Helicopter Gearbox & APU Applications",
+        "body": "Tailored formulations certified for auxiliary power units (APUs), helicopter drive systems, and turboprop reduction gearboxes."
+      }
+    ]
+  },
+  {
+    "slug": "aviation-greases",
+    "title": "Aviation Greases",
+    "shortTitle": "Aviation Greases",
+    "tagline": "Specialized greases for demanding aircraft applications.",
+    "summary": "We anticipate demand for fast-moving grease products and proactively manage stock, while providing expert guidance to help customers select the right grease for each specific application.",
+    "paragraphs": [
+      "Aircraft mechanisms encounter extreme variations in temperature, mechanical shear, water washout, and bearing load. AeroFlux Global supplies aviation greases tailored to every airframe and powerplant requirement.",
+      "From general airframe lubrication (BMS 3-33, MIL-PRF-23827) to high-speed wheel bearing greases and anti-seize pastes, we maintain inventory ready for immediate dispatch."
+    ],
+    "brands": ["AeroShell", "ExxonMobil", "NYCO", "Molykote"],
+    "groups": [
+      {
+        "title": "Multi-Purpose Airframe Greases",
+        "body": "Synthetic greases meeting MIL-PRF-23827, BMS 3-33, and AIMS 09-06-002 for airframe control systems, hinges, and flap tracks."
+      },
+      {
+        "title": "Heavy-Duty Wheel Bearing Greases",
+        "body": "Extreme-pressure synthetic greases designed to withstand high braking temperatures and landing shock loads."
+      },
+      {
+        "title": "High-Load & Anti-Seize Pastes",
+        "body": "Molybdenum disulfide (MoS2) fortified pastes for high-load splines, jack screws, and threaded landing gear assemblies."
+      },
+      {
+        "title": "Wide-Temperature Fluorosilicone Greases",
+        "body": "Inert, fuel-resistant fluorosilicone greases operating reliably across temperatures from -73°C to +204°C."
+      }
+    ]
+  },
+  {
+    "slug": "hydraulic-fluids",
+    "title": "Hydraulic Fluids",
+    "shortTitle": "Hydraulic Fluids",
+    "tagline": "Fluids for critical aircraft hydraulic systems.",
+    "summary": "From mineral-based AeroShell fluids to phosphate-ester Skydrol, we supply trusted hydraulic solutions that have become a key part of our customers’ repeat procurement needs.",
+    "paragraphs": [
+      "Aviation hydraulic systems demand the highest cleanliness standards and stringent thermal stability. We supply certified fluids covering both commercial phosphate-ester and synthetic hydrocarbon systems.",
+      "Batches are shipped with complete manufacturer Certificates of Analysis (CoA) verifying particulate cleanliness and moisture limits."
+    ],
+    "brands": ["AeroShell", "ExxonMobil", "NYCO"],
+    "groups": [
+      {
+        "title": "Phosphate Ester Hydraulic Fluids",
+        "body": "Fire-resistant Skydrol and HyJet fluids designed for commercial transport high-pressure hydraulic circuits."
+      },
+      {
+        "title": "Synthetic Hydrocarbon Fluids (MIL-PRF-5606 / 83282)",
+        "body": "Super-clean mineral and synthetic hydrocarbon fluids for landing gear actuators and flight control surfaces."
+      },
+      {
+        "title": "High-Flash Point Formulations (MIL-PRF-87257)",
+        "body": "Next-generation fire-safe synthetic hydrocarbon hydraulic fluids for modern high-performance aircraft."
+      },
+      {
+        "title": "Preservative & Testing Hydraulic Fluids",
+        "body": "Inhibited test-bench and storage fluids meeting MIL-PRF-6083."
+      }
+    ]
+  },
+  {
+    "slug": "speciality-fluids",
+    "title": "Specialty Fluids",
+    "shortTitle": "Specialty Fluids",
+    "tagline": "Specialized fluids for specific aviation applications.",
+    "summary": "From hydraulic and specialty fluids to corrosion-prevention, de-icing and other mission-critical aviation fluids, we supply trusted solutions designed to support reliable aircraft operations and meet the demanding requirements of modern aviation.",
+    "paragraphs": [
+      "Beyond engine oils and greases, modern flight operations rely on a wide spectrum of specialty technical fluids for instruments, damping, calibration, de-icing, and seasonal preservation.",
+      "AeroFlux Global provides rapid sourcing for even hard-to-find military-spec and OEM-proprietary fluids."
+    ],
+    "brands": ["AeroShell", "Eastman", "NYCO"],
+    "groups": [
+      {
+        "title": "Instrument & Damping Fluids",
+        "body": "Precision silicone fluids for gyros, altimeters, dashpots, and flight instrument vibration damping."
+      },
+      {
+        "title": "Calibration & Test Bench Fluids",
+        "body": "High-purity calibrating fluids for fuel injection pumps, flow meters, and fuel control units."
+      },
+      {
+        "title": "Preservative Fluids & Internal Fogging",
+        "body": "Internal engine preservation fluids and fuel system inhibitors for long-term storage and aircraft ferrying."
+      },
+      {
+        "title": "De-Icing & Heat Transfer Fluids",
+        "body": "Runway, windshield, and airframe anti-icing fluids, alongside synthetic coolant mediums."
+      }
+    ]
+  },
+  {
+    "slug": "aviation-tyres",
+    "title": "Aviation Tyres",
+    "shortTitle": "Aviation Tyres",
+    "tagline": "Aircraft tyres for general, commercial and military aviation.",
+    "summary": "Strong, dependable tyres and supply chain — whatever the mission.",
+    "paragraphs": [
+      "From general aviation and business jets to commercial and specialized aircraft applications, we source aviation tyres from established manufacturers including Goodyear, Dunlop and Michelin, subject to specification and availability.",
+      "Our supply network provides certified fresh-cure tyres complete with OEM tags, ensuring peak structural integrity for scheduled replacements and urgent AOG requirements."
+    ],
+    "brands": ["Goodyear", "Dunlop", "Michelin"],
+    "groups": [
+      {
+        "title": "Commercial Transport Tyres",
+        "body": "Bias and radial aircraft tyres for narrowbody and widebody commercial airliners with high landing frequency."
+      },
+      {
+        "title": "Business & Regional Jet Tyres",
+        "body": "High-speed rated nose and main gear tyres optimized for corporate jets and turboprops."
+      },
+      {
+        "title": "Military & Tactical Tyres",
+        "body": "Ruggedized, high-load tyres built for carrier operations, rough field conditions, and tactical fighters."
+      },
+      {
+        "title": "Tubes & Accessories",
+        "body": "High-grade butyl inner tubes, valve cores, and tyre maintenance hardware."
+      }
+    ]
+  },
+  {
+    "slug": "aerospace-tapes-and-protection-films",
+    "title": "Aerospace Tapes & Protection Films",
+    "shortTitle": "Aerospace Tapes & Protection Films",
+    "tagline": "Protection and specialist tape solutions for aircraft.",
+    "summary": "Nitto and 3M tapes, films and surface-protection systems for structures, interiors, cargo and MRO.",
+    "paragraphs": [
+      "From structural adhesives, specialized tapes, and surface protection films to thermal insulation and interior finishing materials, we source 3M and Nitto aerospace products from established manufacturers and authorized distributors, subject to specification and availability.",
+      "Products are compliant with FAR / JAR 25 flame retardancy standards and approved across Boeing and Airbus material specifications."
+    ],
+    "brands": ["Nitto", "3M"],
+    "groups": [
+      {
+        "title": "Cargo Compartment & Flame-Retardant Tapes",
+        "body": "FAR 25.853 flame-retardant glass cloth tapes for cargo seams and interior insulation blanket repairs."
+      },
+      {
+        "title": "Polyurethane Protective Tapes (Boot & Erosion)",
+        "body": "Erosion protection tapes for leading edges, radomes, and rotor blades against rain and sand impingement."
+      },
+      {
+        "title": "High-Temperature Masking & Speed Tapes",
+        "body": "Aluminum foil tapes (speed tape) and silicone adhesive tapes for high-speed temporary aerodynamic repairs."
+      },
+      {
+        "title": "Surface Protection & Cabin Interior Films",
+        "body": "Protective transit films for painted surfaces, composite panels, and cabin interior installations."
+      }
+    ]
+  },
+  {
+    "slug": "adhesives-and-sealants",
+    "title": "Adhesives & Sealants",
+    "shortTitle": "Adhesives & Sealants",
+    "tagline": "Aerospace-grade bonding and sealing solutions.",
+    "summary": "Molykote, PPG, Loctite and 3M — pastes, sealants and thread-lockers for assembly, sealing and anti-seize.",
+    "paragraphs": [
+      "Aerospace assembly and MRO operations require certified sealants, structural adhesives, and anti-vibration locking compounds engineered to endure extreme atmospheric pressure and fuel exposure.",
+      "We supply aerospace-grade packaging including Semkits, pre-mixed and frozen (PMF) cartridges, and bulk cans with complete shelf-life documentation."
+    ],
+    "brands": ["Molykote", "PPG", "Loctite", "3M"],
+    "groups": [
+      {
+        "title": "Integral Fuel Tank Sealants (Polysulfide & Polythioether)",
+        "body": "AMS 3277 and AMS-S-8802 qualified sealants for fuel tanks, access doors, and pressure cabin seams."
+      },
+      {
+        "title": "Aerospace Structural Pastes & Epoxies",
+        "body": "High-shear paste adhesives and potting compounds for composite repairs and metal bonding."
+      },
+      {
+        "title": "Threadlocking & Retaining Compounds",
+        "body": "Mil-spec anaerobic threadlockers and retaining compounds for anti-vibration fastening."
+      },
+      {
+        "title": "High-Temperature RTV Silicone Sealants",
+        "body": "Firewall sealants and high-temperature gasket makers resistant to synthetic oils and fuels."
+      }
+    ]
+  },
+  {
+    "slug": "cleaners-and-degreasers",
+    "title": "Cleaners & Degreasers",
+    "shortTitle": "Cleaners & Degreasers",
+    "tagline": "Maintenance chemicals for cleaning and surface preparation.",
+    "summary": "Ardrox, ZOK, LPS and WD-40 — cleaning, degreasing, corrosion protection and lubrication for line & base maintenance.",
+    "paragraphs": [
+      "Routine aircraft turnaround and heavy C/D checks necessitate specialized chemicals tested for non-destructive testing (NDT), corrosion inhibition, and turbine compressor recovery.",
+      "AeroFlux Global provides trusted aerospace-approved cleaners that protect exotic alloys, acrylic transparencies, and composite structures."
+    ],
+    "brands": ["Ardrox", "ZOK", "LPS", "Permatex"],
+    "groups": [
+      {
+        "title": "Gas Turbine Compressor Washes",
+        "body": "Off-line and on-line compressor cleaner fluids formulated to restore turbine compressor efficiency (e.g. ZOK 27, Ardrox 6440)."
+      },
+      {
+        "title": "NDT Pre-Cleaners & Solvent Removers",
+        "body": "Approved non-destructive testing solvent cleaners and red penetrant removers (AMS 2644)."
+      },
+      {
+        "title": "Electrical Contact & Precision Cleaners",
+        "body": "Non-conductive fast-evaporating contact cleaners for avionics and electrical wire harnesses."
+      },
+      {
+        "title": "Corrosion Inhibiting Compounds (CIC) & Water Displacers",
+        "body": "Penetrating fluids, corrosion barrier coatings, and water-displacing protective films (e.g. LPS 2, LPS 3)."
+      }
+    ]
+  },
+  {
+    "slug": "aircraft-spares",
+    "title": "Aircraft Spares",
+    "shortTitle": "Aircraft Spares",
+    "tagline": "Aircraft parts and maintenance-related spares.",
+    "summary": "Sourcing OEM-approved and traceable spares across the aircraft — from powerplant to avionics.",
+    "paragraphs": [
+      "Our aircraft parts division provides rapid sourcing for airframe components, rotable units, avionics, landing gear parts, and fasteners with strict traceability.",
+      "Every shipment is accompanied by authorized release certificates (FAA Form 8130-3, EASA Form 1, or OEM Certificate of Conformance) to support commercial and defense operators."
+    ],
+    "brands": ["Momentive", "Eastman", "3M", "PPG"],
+    "groups": [
+      {
+        "title": "Engine Power Plant & APU Units",
+        "body": "Engine spares, line-replaceable modules, and powerplant components sourced with full traceability."
+      },
+      {
+        "title": "Landing Gear & Brakes",
+        "body": "Landing-gear parts, wheels and brake-assembly components for scheduled and AOG needs."
+      },
+      {
+        "title": "Avionics & Flight Deck Instruments",
+        "body": "Line-replaceable units, sensors, and avionics instruments from approved manufacturers."
+      },
+      {
+        "title": "Electrical & Hardware Fasteners",
+        "body": "Electrical components, wire harness connectors, and mil-spec structural hardware for the entire airframe."
+      }
+    ]
+  }
+]

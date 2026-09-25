@@ -1,0 +1,113 @@
+{
+  "home": {
+    "description": "Global sourcing and rapid dispatch of certified lubricants, fluids, MRO products with full trace documentation.",
+    "eyebrow": "AOG ready supply chain",
+    "title": "OEM-compliant aviation procurement.",
+    "lede": "Global sourcing and rapid dispatch of certified lubricants, fluids, MRO products with full trace documentation.",
+    "pillars": ["AOG Support", "Global Supply Network", "Trusted by Industry"],
+    "points": [
+      { "title": "Trusted Brands", "body": "Global names, proven performances." },
+      { "title": "Wide Availability", "body": "Access to a comprehensive range of products." },
+      { "title": "Expert Support", "body": "Get advised by experts in the industry." }
+    ],
+    "categoriesEyebrow": "Explore our categories",
+    "categoriesTitle": "Products built around your operation.",
+    "categoriesBody": "From aviation lubricants and hydraulic fluids to specialist MRO products, explore our product categories and find the right solution for your requirements.",
+    "precisionEyebrow": "Featured products",
+    "precisionTitle": "Precision, speed, compliance.",
+    "precisionBody": "A global supply partner delivering aviation products wherever you operate.",
+    "precisionLink": "See our Global Reach",
+    "partnerEyebrow": "Your aviation supply partner.",
+    "partnerBody": "AeroFlux Global is an aviation and procurement supplier for the Middle East, India, and Africa, supplying OEM certified spares and lubricants to operators and consumers. We combine global sourcing with reliable logistics to keep your operations moving.",
+    "partnerLink": "Read more about Aeroflux Global",
+    "ctaEyebrow": "Ready to work together?",
+    "ctaTitle": "Let's keep aviation moving forward",
+    "ctaBody": "Get in touch with our team for product inquiries, RFQs or partnerships opportunities."
+  },
+  "about": {
+    "description": "From aviation lubricants and hydraulic fluids to specialist MRO products, AeroFlux connects operators, MROs and aviation businesses with trusted products and dependable global supply.",
+    "title": "About Us",
+    "supplyTitle": "Reliable supply.",
+    "supplyBody": "From aviation lubricants and hydraulic fluids to specialist MRO products, AeroFlux connects operators, MROs and aviation businesses with trusted products and dependable global supply.",
+    "drivenTitle": "Driven by aviation.",
+    "driven": [
+      "Founded in Dubai, AeroFlux Global was established to solve a simple but critical challenge - making aviation consumables more accessible, reliable and traceable for operators.",
+      "With deep industry knowledge and a global network of trusted manufacturers, we provide tailored procurement solutions for AOG and scheduled maintenance requirements.",
+      "At AeroFlux Global, we combine technical expertise, responsive service, and dependable global sourcing to simplify the procurement process. From specification verification and product sourcing to certification and delivery, every requirement is handled with precision—helping our customers reduce downtime, maintain compliance, and keep their operations moving forward."
+    ],
+    "trustTitle": "Built on trust.",
+    "simpler": "Simpler.",
+    "values": [
+      {
+        "n": "01",
+        "title": "Transparency",
+        "body": "Clear communication, accurate information and complete visibility at every step.",
+        "extra": "Through transparency, reliability and expert guidance, we elevate the customer experience and create seamless procurement solutions for aviation products worldwide."
+      },
+      {
+        "n": "02",
+        "title": "Reliability",
+        "body": "Trusted products and dependable support, when it matters most."
+      },
+      {
+        "n": "03",
+        "title": "Expert Advice",
+        "body": "A focused and experienced workforce guiding you to the right solutions for your aviation needs."
+      },
+      {
+        "n": "04",
+        "title": "Seamless Transactions",
+        "body": "Efficient procurement and logistics support from enquiry to delivery."
+      }
+    ],
+    "brandsTitle": "Global brands.",
+    "brandsBody": "We work with leading OEM's to bring you the world's most trusted aviation consumables.",
+    "ctaTitle": "Moving forward",
+    "ctaBody": "Get in touch with our team for product inquiries, RFQs or partnerships opportunities."
+  },
+  "portfolio": {
+    "description": "A curated range of aviation products from globally trusted brands, supporting your operations on the ground and in the air.",
+    "title": "Portfolio",
+    "intro": "A curated range of aviation products from globally trusted brands, supporting your operations on the ground and in the air.",
+    "operationTitle": "Your operation.",
+    "operationBody": "From aviation lubricants and hydraulic fluids to specialist MRO products, explore our product categories and find the right solution for your requirements.",
+    "points": [
+      { "title": "Trusted Brands", "body": "Global names, proven performances." },
+      { "title": "Wide Availability", "body": "Access to a comprehensive range of products." },
+      { "title": "Expert Support", "body": "Access to a comprehensive range of products." }
+    ],
+    "featured": [
+      { "name": "ETO 2380", "body": "High thermal stability for modern engines.", "href": "/turbine-engine-oil" },
+      { "name": "AeroShell Fluid 3", "body": "Balanced thermal stability for reliable turbine performance.", "href": "/turbine-engine-oil" }
+    ],
+    "progressTitle": "In progress.",
+    "progressBody": "We go beyond supply. With industry expertise, global partnerships and a commitment to service, we help keep your operations moving - today and tomorrow.",
+    "ctaTitle": "Aviation moving.",
+    "ctaBody": "Get in touch with our team to discuss your requirements or request a quote."
+  },
+  "contact": {
+    "description": "Contact AeroFlux Global for a RFQ. Upload your procurement document, specification sheet or product list.",
+    "title": "Contact",
+    "kicker": "Aviation lubricants. Global sourcing.",
+    "formTitle": "Contact us for a RFQ",
+    "formBody": "Upload your procurement document, specification sheet or product list.",
+    "moreTitle": "Want more details about Aeroflux Global?",
+    "reasons": [
+      {
+        "title": "Quality Assured",
+        "body": "We work with trusted OEMs and follow strict quality standards."
+      },
+      {
+        "title": "Logistics Support",
+        "body": "Access to a wide network of suppliers to meet critical requirements."
+      },
+      {
+        "title": "Reliability Guaranteed",
+        "body": "Products meet aviation industry specifications and compliance."
+      }
+    ],
+    "why": "Why choose Aeroflux Global?",
+    "worldTitle": "Supporting operations around the world",
+    "worldBody": "Proudly serving clients across the Middle East, India, and Africa."
+  }
+}

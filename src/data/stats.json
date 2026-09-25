@@ -1,0 +1,17 @@
+{
+  "home": [
+    { "value": "100%", "label": "Trace compliance", "detail": "Every line ships with documents you can follow back to source." },
+    { "value": "24/7", "label": "AOG desk", "detail": "The desk stays open when an aircraft is on the ground." },
+    { "value": "200+", "label": "Products", "detail": "Certified fluids, lubricants, and MRO lines on catalog." }
+  ],
+  "about": [
+    { "value": "100+", "label": "Global suppliers" },
+    { "value": "50+", "label": "Countries served" },
+    { "value": "200+", "label": "Products available" }
+  ],
+  "portfolio": [
+    { "value": "500+", "label": "Products" },
+    { "value": "50+", "label": "Global brands" },
+    { "value": "30+", "label": "Countries saved" }
+  ]
+}
